@@ -1,0 +1,29 @@
+:root {
+  --fonts: "Geologica", sans-serif;
+  --fontsUnbounded: "Unbounded", sans-serif;
+  --tr: 0.3s;
+  --bg-primary: #083939;
+  --bg-red: #c13a39;
+  --bg-gray: #c3c9c7;
+  --bg-gray2: #edf2f0;
+}
+
+$tr: var(--tr);
+$fonts: var(--fonts);
+$fontsUnbounded: var(--fontsUnbounded);
+
+$desktop-s: 1600px;
+$laptop-l: 1440px;
+$laptop-m: 1160px;
+$laptop: 1024px;
+$tablet-l: 920px;
+$tablet: 768px;
+$tablet-s: 500px;
+$mobile-l: 425px;
+$mobile-m: 375px;
+$mobile: 320px;
+
+$bg-primary: var(--bg-primary);
+$bg-red: var(--bg-red);
+$bg-gray: var(--bg-gray);
+$bg-gray2: var(--bg-gray2);

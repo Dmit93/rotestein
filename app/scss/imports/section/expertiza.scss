@@ -1,0 +1,119 @@
+.section-expertiza {
+  position: relative;
+}
+
+.section-expertiza__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    font-family: var(--fontsUnbounded);
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.section-expertiza__content {
+  display: flex;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.section-expertiza__left {
+  width: 50%;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.section-expertiza__right {
+  margin-left: 80px;
+  img {
+    height: 450px;
+    max-width: 640px;
+    object-fit: cover;
+  }
+  @media (min-width: 1400px) {
+    position: absolute;
+    right: 0;
+    bottom: auto;
+    top: auto;
+  }
+  @media (max-width: 992px) {
+    margin-left: 0;
+    margin-top: 15px;
+    img {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    img {
+      height: 240px;
+    }
+  }
+}
+
+.list-number-variants {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+  counter-reset: num;
+  li {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: var(--bg-primary);
+    padding-bottom: 11px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+    font-family: var(--fontsUnbounded);
+    &:hover {
+      a {
+        svg {
+          transform: rotate(90deg);
+          path {
+            fill: var(--bg-red);
+          }
+        }
+      }
+    }
+    a {
+      display: flex;
+      svg {
+        width: 19px;
+        height: 19px;
+        margin-left: auto;
+        margin-right: 10px;
+        transition: var(--tr) cubic-bezier(0.4, 0, 1, 1);
+      }
+    }
+    &:before {
+      content: "0" counter(num);
+      counter-increment: num;
+      font-size: 16px;
+      color: #c3c9c7;
+      display: block;
+      margin-bottom: 2px;
+      font-family: var(--fonts);
+    }
+  }
+  @media (max-width: 768px) {
+    li {
+      font-size: 16px;
+      padding-bottom: 4px;
+    }
+  }
+}

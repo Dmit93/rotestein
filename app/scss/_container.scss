@@ -1,0 +1,12 @@
+%container-style {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $laptop-m;
+  @media (max-width: $laptop-m) {
+    padding: 0 30px;
+  }
+}
+
+.container {
+  @extend %container-style;
+}

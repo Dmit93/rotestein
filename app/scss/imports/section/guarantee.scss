@@ -1,0 +1,153 @@
+.guarantee-section {
+  text-align: center;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  h2 {
+    margin-right: 20px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+    h2 {
+      margin-right: 0;
+    }
+    .btn {
+      display: none;
+    }
+  }
+}
+
+.consultation-button {
+  padding: 10px 20px;
+  border: 2px solid #004857;
+  background-color: #fff;
+  color: #004857;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.consultation-button:hover {
+  background-color: #004857;
+  color: #fff;
+}
+
+.statistics {
+  display: flex;
+  align-items: flex-end;
+  gap: 19px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.stat-box__info {
+  opacity: 0;
+  z-index: 2;
+  margin-top: auto;
+  transition: 0.6s;
+  transform: translateX(-100%);
+  color: var(--bg-primary);
+  font-size: 16px;
+  span {
+    font-weight: 700;
+  }
+  p {
+    width: 40%;
+    line-height: 1.2;
+  }
+}
+
+.stat-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: left;
+  height: 293px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: 0.6s;
+    opacity: 0;
+  }
+  &:hover {
+    .stat-box__info {
+      opacity: 1;
+      transform: none;
+    }
+    img {
+      opacity: 1;
+    }
+  }
+  &:first-child {
+    width: 319px;
+  }
+  &:nth-of-type(2) {
+    width: 248px;
+    min-height: 323px;
+  }
+  &:nth-of-type(3) {
+    width: 274px;
+  }
+  &:nth-of-type(4) {
+    width: 261px;
+    height: 361px;
+  }
+  @media (max-width: 768px) {
+    &:first-child,
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      width: 100%;
+      height: 228px;
+      min-height: 228px;
+    }
+    .stat-box__info {
+      opacity: 1;
+      transform: none;
+    }
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.stat-number {
+  display: block;
+  font-size: 70px;
+  color: var(--bg-primary);
+  line-height: 138%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-family: var(--fontsUnbounded);
+  @media (max-width: 992px) {
+    font-size: 50px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.stat-highlight {
+  color: var(--bg-red);
+}
+
+.stat-description {
+  font-size: 16px;
+  color: var(--bg-primary);
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotenstein</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="/img/logo.svg" alt="Rotenstein Logo">
+                </div>
+                <div class="header-container--sect">
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Реализованные объекты</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="contact-info">
+                        <div class="header-contacts">
+                            <a href="tel:+74951590690" class="header-contacts--tel">+7 495 159-06-90</a>
+                            <a href="" class="header-contacts--mess">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 0C23.2846 0 30 6.71544 30 15C30 23.2846 23.2846 30 15 30C6.71544 30 0 23.2846 0 15C0 6.71544 6.71544 0 15 0ZM20.1743 21.1141C20.4502 20.2676 21.7428 11.8311 21.9026 10.1687C21.9509 9.66522 21.7917 9.33065 21.48 9.1813C21.103 9 20.5448 9.09065 19.8972 9.32413C19.0089 9.64435 7.65326 14.4659 6.99717 14.745C6.375 15.0091 5.78674 15.2974 5.78674 15.7148C5.78674 16.0083 5.96087 16.1733 6.44087 16.3448C6.94044 16.5228 8.19848 16.9043 8.94131 17.1091C9.65674 17.3067 10.4713 17.1352 10.9278 16.8515C11.4117 16.5509 16.9963 12.8139 17.3974 12.4865C17.7978 12.1591 18.1174 12.5785 17.79 12.9065C17.4626 13.2339 13.6291 16.9546 13.1237 17.4698C12.51 18.0952 12.9457 18.7435 13.3572 19.003C13.8274 19.2991 17.2089 21.5674 17.7183 21.9313C18.2276 22.2952 18.7441 22.4602 19.217 22.4602C19.6898 22.4602 19.9389 21.8374 20.1743 21.1141Z"
+                                        fill="#073030" />
+                                </svg>
+                            </a>
+                            <a href="" class="header-contacts--mess">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 0C6.72921 0 9.67976e-05 6.72911 9.67976e-05 15C9.67976e-05 17.5826 0.667268 20.1221 1.93248 22.363L0.0242271 29.1716C-0.0383814 29.3953 0.0222707 29.6353 0.184009 29.8016C0.308574 29.9301 0.478139 29.9999 0.652269 29.9999C0.704442 29.9999 0.757268 29.9934 0.80879 29.981L7.91485 28.2208C10.0846 29.3856 12.5283 29.9999 15 29.9999C23.2709 29.9999 30 23.2708 30 15C30 6.72911 23.2709 0 15 0ZM22.5457 20.293C22.2248 21.1812 20.6857 21.9919 19.9461 22.1008C19.2822 22.198 18.4422 22.2397 17.52 21.9501C16.9611 21.7741 16.2437 21.5406 15.3248 21.1486C11.462 19.5012 8.93942 15.6606 8.74637 15.4069C8.55398 15.1532 7.17399 13.3454 7.17399 11.4743C7.17399 9.60323 8.16855 8.68301 8.52203 8.30215C8.8755 7.92128 9.29224 7.82606 9.5492 7.82606C9.80615 7.82606 10.0625 7.82932 10.2875 7.83976C10.5242 7.8515 10.8418 7.75041 11.1542 8.49258C11.4751 9.25432 12.2453 11.1254 12.3405 11.3165C12.437 11.5069 12.5009 11.7293 12.3731 11.983C12.2453 12.2367 12.1814 12.3952 11.9883 12.6176C11.7953 12.84 11.584 13.1132 11.4105 13.2841C11.2175 13.4739 11.0172 13.6793 11.2416 14.0602C11.4659 14.441 12.2388 15.686 13.384 16.6943C14.8546 17.9895 16.0957 18.3912 16.4805 18.5817C16.8653 18.7721 17.0903 18.7402 17.3146 18.4865C17.539 18.2321 18.2772 17.3758 18.5335 16.9956C18.7898 16.6154 19.0468 16.678 19.4003 16.8052C19.7537 16.9317 21.647 17.8512 22.0318 18.0417C22.4165 18.2321 22.6735 18.3273 22.77 18.4858C22.8665 18.6436 22.8665 19.4054 22.5457 20.293Z"
+                                        fill="#073030" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="call-button btn" data-modal-target="#modal">Заказать звонок</button>
+                </div>
+                <button class="burger-menu">
+                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1L17 1" stroke="black" />
+                        <path d="M0 7L17 7" stroke="black" />
+                        <path d="M0 13L17 13" stroke="black" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container">
+                <div class="main-content">
+                    <div class="header-section__content">
+                        <h1>СОЗДАЕМ ПРОСТРАНСТВО
+                            <span id="change-text">ДЛЯ ЖИЗНИ</span>
+                        </h1>
+                        <p>ROTENSTEIN 19 ЛЕТ ПРОЕКТИРУЕТ И СТРОИТ ДОМА ПРЕМИУМ-КЛАССА</p>
+                    </div>
+                </div>
+                <img class="house-image" src="/img/main.jpg" alt="Modern House">
+            </div>
+        </section>
+        <section class="guarantee-section">
+            <div class="container">
+                <div class="header-section">
+                    <h2 class="h2-title">СПРОЕКТИРУЕМ И ПОСТРОИМ ДОМ С ГАРАНТИЕЙ 50 ЛЕТ</h2>
+                    <button class="btn">Получить консультацию</button>
+                </div>
+                <div class="statistics">
+                    <div class="stat-box">
+                        <span class="stat-number">13</span>
+                        <span class="stat-description">Лет чистой деловой репутации</span>
+                        <img src="/img/g-1.jpg" alt="">
+                        <div class="stat-box__info">
+                            <span>Сергей Миронов</span>
+                            <p>Генеральный директор</p>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">552</span>
+                        <span class="stat-description">Человека штат квалифицированных сотрудников</span>
+                        <img src="/img/g-2.jpg" alt="">
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">884</span>
+                        <span class="stat-description">Реализованных проекта</span>
+                        <img src="/img/g-3.jpg" alt="">
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number stat-highlight">50</span>
+                        <span class="stat-description">Лет гарантии на построенные дома</span>
+                        <img src="/img/g-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <div class="container">
+                <div class="quiz-section__container">
+                    <div class="quiz-section__text">
+                        <h2>Ответьте на 4 вопроса и получите расчет стоимости проекта и подарок</h2>
+                        <p>Подарок - выезд архитектора на участок для определения посадки дома</p>
+                        <button class="quiz-section__button btn">Рассчитать</button>
+                    </div>
+                    <div class="quiz-section__picture">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="house-selection-section">
+            <div class="container">
+                <h2 class="h2-title">ВЫБЕРИТЕ СВОЙ ЗАГОРОДНЫЙ ДОМ</h2>
+                <div class="filters">
+                    <button class="filter-button">Одноэтажные дома</button>
+                    <button class="filter-button">Каменные дома</button>
+                    <button class="filter-button">Классические дома</button>
+                    <button class="filter-button">Дома в стиле хай-тек</button>
+                    <button class="filter-button">Дома с плоской кровлей</button>
+                    <button class="filter-button">Дома с мансардой</button>
+                    <button class="filter-button">Двухэтажные дома</button>
+                    <button class="filter-button">Деревянные дома</button>
+                    <button class="filter-button">Современные дома</button>
+                    <button class="filter-button">Дома в стиле ранчо</button>
+                    <button class="filter-button">Дома с панорамными окнами</button>
+                    <button class="filter-button">Дома с гаражом</button>
+                </div>
+                <div class="house-gallery">
+                    <div class="house-item">
+                        <img src="/img/house.jpg" alt="Дом в Макарово">
+                        <div class="house-info">
+                            <div class="house-info--line">
+                                <span class="house-type">Виллы</span>
+                                <span class="house-size">851 м<sup>2</sup></span>
+                            </div>
+                            <h3>ДОМ В МАКАРОВО</h3>
+                        </div>
+                    </div>
+                    <div class="house-item">
+                        <img src="/img/house.jpg" alt="Дом в Макарово">
+                        <div class="house-info">
+                            <div class="house-info--line">
+                                <span class="house-type">Виллы</span>
+                                <span class="house-size">851 м<sup>2</sup></span>
+                            </div>
+                            <h3>ДОМ В МАКАРОВО</h3>
+                        </div>
+                    </div>
+                    <div class="house-item">
+                        <img src="/img/house.jpg" alt="Дом в Макарово">
+                        <div class="house-info">
+                            <div class="house-info--line">
+                                <span class="house-type">Виллы</span>
+                                <span class="house-size">851 м<sup>2</sup></span>
+                            </div>
+                            <h3>ДОМ В МАКАРОВО</h3>
+                        </div>
+                    </div>
+                    <div class="house-item">
+                        <img src="/img/house.jpg" alt="Дом в Макарово">
+                        <div class="house-info">
+                            <div class="house-info--line">
+                                <span class="house-type">Виллы</span>
+                                <span class="house-size">851 м<sup>2</sup></span>
+                            </div>
+                            <h3>ДОМ В МАКАРОВО</h3>
+                        </div>
+                    </div>
+                    <div class="house-item">
+                        <img src="/img/house.jpg" alt="Дом в Макарово">
+                        <div class="house-info">
+                            <div class="house-info--line">
+                                <span class="house-type">Виллы</span>
+                                <span class="house-size">851 м<sup>2</sup></span>
+                            </div>
+                            <h3>ДОМ В МАКАРОВО</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="view-more-button btn">Посмотреть еще</button>
+            </div>
+        </section>
+
+        <section class="section-expertiza">
+            <div class="container">
+                <div class="section-expertiza__top">
+                    <p>Продемонстрируем качество реализуемых проектов - приглашаем на индивидуальную
+                        экскурсию готовых объектов</p>
+                    <a href="" class="btn">Посетить объекты</a>
+                </div>
+                <h2 class="h2-title">Наша экспертиза</h2>
+                <div class="section-expertiza__content">
+                    <div class="section-expertiza__left">
+                        <ol class="list-number-variants">
+                            <li>
+                                <a href="">
+                                    <span>ПРОЕКТИРОВАНИЕ</span>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>ПРОЕКТИРОВАНИЕ</span>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>ПРОЕКТИРОВАНИЕ</span>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>ПРОЕКТИРОВАНИЕ</span>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>ПРОЕКТИРОВАНИЕ</span>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>ПРОЕКТИРОВАНИЕ</span>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="section-expertiza__right">
+                        <img src="/img/house.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-info">
+            <div class="container">
+                <div class="section-info__container">
+                    <div class="section-info__element">
+                        <img src="/img/house.jpg" alt="">
+                        <button class="section-info__element--play">
+                            <svg width="97" height="97" viewBox="0 0 97 97" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="48.5" cy="48.5" r="48.5" fill="#D9D9D9" fill-opacity="0.6" />
+                                <path d="M72 49L36 69.7846V28.2154L72 49Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="section-info__element">
+                        <img src="/img/house.jpg" alt="">
+                        <button class="section-info__element--play">
+                            <svg width="97" height="97" viewBox="0 0 97 97" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="48.5" cy="48.5" r="48.5" fill="#D9D9D9" fill-opacity="0.6" />
+                                <path d="M72 49L36 69.7846V28.2154L72 49Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="section-info__element">
+                        <img src="/img/house.jpg" alt="">
+                        <button class="section-info__element--play">
+                            <svg width="97" height="97" viewBox="0 0 97 97" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="48.5" cy="48.5" r="48.5" fill="#D9D9D9" fill-opacity="0.6" />
+                                <path d="M72 49L36 69.7846V28.2154L72 49Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn">Записаться на экскурсию</button>
+            </div>
+        </section>
+
+        <section class="standart">
+            <div class="container">
+                <h2 class="h2-title">Соблюдаем стандарты качества </h2>
+                <p class="standart-text">начиная от архитектора до сотрудника на строительном объекте</p>
+                <div class="standart-container">
+                    <div class="standart-container__left">
+                        <img id="dynamicImage" src="/img/house.jpg" alt="">
+                    </div>
+                    <div class="standart-container__right">
+                        <ol class="list-number-variants">
+                            <li data-img-src="/img/g-1.jpg">
+                                <span>Авторская разработка проекта</span>
+                            </li>
+                            <li data-img-src="/img/g-2.jpg">
+                                <span>BIM проектирование</span>
+                            </li>
+                            <li data-img-src="/img/g-3.jpg">
+                                <span>24/7 отчет по ходу строительства</span>
+                            </li>
+                            <li data-img-src="/img/g-4.jpg">
+                                <span>Персональный менеджер проекта</span>
+                            </li>
+                            <li data-img-src="/img/g-2.jpg">
+                                <span>Оптимизация расходов</span>
+                            </li>
+                            <li data-img-src="/img/g-1.jpg">
+                                <span>Реализация не выходя из сметы</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="" alt="">
+            </div>
+            <nav class="footer-menu">
+                <ul>
+                    <li>
+                        <a href="">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="">Реализованные объекты</a>
+                    </li>
+                    <li>
+                        <a href="">О нас</a>
+                    </li>
+                    <li>
+                        <a href="">Контакты</a>
+                    </li>
+            </nav>
+            <div class="footer-contacts">
+                <a href="tel:+74951590690" class="footer-contacts--tel">+7 495 159-06-90</a>
+                <a href="" class="footer-contacts--mess">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 0C23.2846 0 30 6.71544 30 15C30 23.2846 23.2846 30 15 30C6.71544 30 0 23.2846 0 15C0 6.71544 6.71544 0 15 0ZM20.1743 21.1141C20.4502 20.2676 21.7428 11.8311 21.9026 10.1687C21.9509 9.66522 21.7917 9.33065 21.48 9.1813C21.103 9 20.5448 9.09065 19.8972 9.32413C19.0089 9.64435 7.65326 14.4659 6.99717 14.745C6.375 15.0091 5.78674 15.2974 5.78674 15.7148C5.78674 16.0083 5.96087 16.1733 6.44087 16.3448C6.94044 16.5228 8.19848 16.9043 8.94131 17.1091C9.65674 17.3067 10.4713 17.1352 10.9278 16.8515C11.4117 16.5509 16.9963 12.8139 17.3974 12.4865C17.7978 12.1591 18.1174 12.5785 17.79 12.9065C17.4626 13.2339 13.6291 16.9546 13.1237 17.4698C12.51 18.0952 12.9457 18.7435 13.3572 19.003C13.8274 19.2991 17.2089 21.5674 17.7183 21.9313C18.2276 22.2952 18.7441 22.4602 19.217 22.4602C19.6898 22.4602 19.9389 21.8374 20.1743 21.1141Z"
+                            fill="#073030" />
+                    </svg>
+                </a>
+                <a href="" class="footer-contacts--mess">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 0C6.72921 0 9.67976e-05 6.72911 9.67976e-05 15C9.67976e-05 17.5826 0.667268 20.1221 1.93248 22.363L0.0242271 29.1716C-0.0383814 29.3953 0.0222707 29.6353 0.184009 29.8016C0.308574 29.9301 0.478139 29.9999 0.652269 29.9999C0.704442 29.9999 0.757268 29.9934 0.80879 29.981L7.91485 28.2208C10.0846 29.3856 12.5283 29.9999 15 29.9999C23.2709 29.9999 30 23.2708 30 15C30 6.72911 23.2709 0 15 0ZM22.5457 20.293C22.2248 21.1812 20.6857 21.9919 19.9461 22.1008C19.2822 22.198 18.4422 22.2397 17.52 21.9501C16.9611 21.7741 16.2437 21.5406 15.3248 21.1486C11.462 19.5012 8.93942 15.6606 8.74637 15.4069C8.55398 15.1532 7.17399 13.3454 7.17399 11.4743C7.17399 9.60323 8.16855 8.68301 8.52203 8.30215C8.8755 7.92128 9.29224 7.82606 9.5492 7.82606C9.80615 7.82606 10.0625 7.82932 10.2875 7.83976C10.5242 7.8515 10.8418 7.75041 11.1542 8.49258C11.4751 9.25432 12.2453 11.1254 12.3405 11.3165C12.437 11.5069 12.5009 11.7293 12.3731 11.983C12.2453 12.2367 12.1814 12.3952 11.9883 12.6176C11.7953 12.84 11.584 13.1132 11.4105 13.2841C11.2175 13.4739 11.0172 13.6793 11.2416 14.0602C11.4659 14.441 12.2388 15.686 13.384 16.6943C14.8546 17.9895 16.0957 18.3912 16.4805 18.5817C16.8653 18.7721 17.0903 18.7402 17.3146 18.4865C17.539 18.2321 18.2772 17.3758 18.5335 16.9956C18.7898 16.6154 19.0468 16.678 19.4003 16.8052C19.7537 16.9317 21.647 17.8512 22.0318 18.0417C22.4165 18.2321 22.6735 18.3273 22.77 18.4858C22.8665 18.6436 22.8665 19.4054 22.5457 20.293Z"
+                            fill="#073030" />
+                    </svg>
+                </a>
+                <button class="btn">Заказать звонок</button>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="modal" data-modal="#modal">
+        <div class="modal-content">
+            <span class="close" data-close>&times;</span>
+            <p>This is the first modal window.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

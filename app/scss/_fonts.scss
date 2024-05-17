@@ -1,0 +1,15 @@
+@mixin font($fname, $fstyle, $fweight, $furl_woff2) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url($furl_woff2) format("truetype");
+  }
+}
+
+@include font("Unbounded", normal, 400, "../fonts/Unbounded-Regular.ttf");
+@include font("Unbounded", normal, 500, "../fonts/Unbounded-Medium.ttf");
+@include font("Geologica", normal, 200, "../fonts/Geologica-ExtraLight.ttf");
+@include font("Geologica", normal, 700, "../fonts/Geologica-Bold.ttf");
