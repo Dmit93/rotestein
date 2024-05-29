@@ -1,5 +1,8 @@
 .section-info {
   background: var(--bg-primary);
+  .container {
+    position: relative;
+  }
   .btn {
     border-color: #fff;
     color: #fff;
@@ -10,26 +13,70 @@
       color: var(--bg-primary);
     }
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  @media (max-width: 992px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: block;
+    }
+    .btn {
+      display: none;
+      margin-top: 20px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .swiper-button-next {
+      right: var(--swiper-navigation-sides-offset, 20px);
+    }
+    .swiper-button-prev {
+      left: var(--swiper-navigation-sides-offset, 30px);
+    }
+  }
+  @media (max-width: 768px) {
+    .swiper-button-prev {
+      left: var(--swiper-navigation-sides-offset, 10px);
+    }
+    .swiper-button-next {
+      right: var(--swiper-navigation-sides-offset, 0);
+    }
+  }
 }
 
 .section-info__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
 }
 
 .section-info__element {
   position: relative;
   img {
-    height: 195px;
-    object-fit: cover;
+    max-height: 500px;
   }
-  &:first-child {
-    grid-column: 3 / 1;
-    grid-row: 3 / 1;
+  @media (min-width: 992px) {
     img {
-      height: 100%;
-      max-height: 410px;
+      height: 195px;
+      object-fit: cover;
+    }
+    &:first-child {
+      grid-column: 3 / 1;
+      grid-row: 3 / 1;
+      img {
+        height: 100%;
+        max-height: 410px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    img {
+      max-width: 96%;
+      margin: auto;
+      display: flex;
     }
   }
 }
@@ -50,5 +97,9 @@
     svg {
       transform: scale(1.1);
     }
+  }
+  @media (max-width: 500px) {
+    width: 50px;
+    height: 50px;
   }
 }

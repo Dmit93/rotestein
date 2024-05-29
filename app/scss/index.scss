@@ -42,3 +42,11 @@ section {
     justify-content: center;
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  &:after {
+    color: #fff;
+    font-size: 33px;
+  }
+}

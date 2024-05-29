@@ -15,7 +15,7 @@ module.exports = {
                 }
             },
             {
-                test: /.(scss|sass)$/i,
+                test: /.(scss|sass|css)$/i,
                 use: [
                     process.env.NODE_ENV !== 'production'
                         ? 'style-loader'

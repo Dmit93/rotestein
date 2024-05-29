@@ -111,6 +111,7 @@
     font-family: var(--fontsUnbounded);
   }
   @media (max-width: 768px) {
+    padding-top: 8px;
     h3 {
       font-size: 16px;
       font-weight: 400;
@@ -125,7 +126,7 @@
   border: 1px solid #fff;
   margin-right: 20px;
   @media (max-width: 768px) {
-    padding: 5px 15px;
+    padding: 2px 15px;
   }
 }
 
