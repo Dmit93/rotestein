@@ -71,18 +71,25 @@
   gap: 20px;
   list-style-type: none;
   counter-reset: num;
-  li {
+  & > li {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: -0.04em;
     text-transform: uppercase;
     color: var(--bg-primary);
-    padding-bottom: 11px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+
+    &:not(:has(.accordion-top)) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+      padding-bottom: 11px;
+    }
     font-family: var(--fontsUnbounded);
     position: relative;
     &:hover {
-      a {
+      a,
+      .accordion-top {
+        span {
+          color: var(--bg-red);
+        }
         svg {
           transform: rotate(90deg);
           path {
@@ -91,7 +98,8 @@
         }
       }
     }
-    a {
+    a,
+    .accordion-top {
       display: flex;
       svg {
         width: 19px;

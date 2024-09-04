@@ -2,13 +2,29 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+
+const pages = [
+    'index',
+    'proektirovanie',
+    'partnerstvo',
+    'card'
+];
+
+
+const htmlPlugins = pages.map(page => new HtmlWebpackPlugin({
+    template: path.resolve(__dirname, `./app/${page}.html`),
+    filename: `${page}.html`,
+    inject: 'body',
+    chunks: ['main'] // Используем 'main' для всех страниц
+}));
+
 module.exports = {
     entry: './app/index.js',
     module: {
         rules: [
             { test: /\.(js)$/, use: 'babel-loader' },
             {
-                test: /.(png|jpg|jpeg|gif|svg)$/i,
+                test: /.(png|jpg|jpeg|webp|gif|svg)$/i,
                 type: 'asset/resource',
                 generator: {
                     filename: './img/[name][ext][query]',
@@ -31,10 +47,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: './app/index.html',
-            filename: 'index.html'
-        }),
+        ...htmlPlugins,
         new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css',

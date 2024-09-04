@@ -109,6 +109,9 @@
     font-size: 18px;
     color: #fff;
     font-family: var(--fontsUnbounded);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
   }
   @media (max-width: 768px) {
     padding-top: 8px;
@@ -120,7 +123,7 @@
 }
 
 .house-type {
-  padding: 10px 15px;
+  padding: 6px 15px;
   font-size: 16px;
   color: #fff;
   border: 1px solid #fff;
@@ -132,7 +135,7 @@
 
 .house-size {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   color: #c3c9c7;
 }
 

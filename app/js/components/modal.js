@@ -6,7 +6,7 @@ const openModal = (modal) => {
     if (modal == null) return;
     modal.classList.add('show');
     setTimeout(() => {
-        document.querySelector('.modal-content').classList.add('show');
+        modal.querySelector('.modal-content').classList.add('show');
     }, 100);
 };
 

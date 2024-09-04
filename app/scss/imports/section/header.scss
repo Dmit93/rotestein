@@ -28,7 +28,7 @@ header {
       height: 500px;
     }
     @media (max-width: 768px) {
-      height: 375px;
+      height: 410px;
     }
   }
 }
@@ -42,13 +42,17 @@ header {
   margin-top: 12px;
   @media (max-width: 992px) {
     position: absolute;
-    z-index: 9999;
+    z-index: -1;
     background: #fff;
     width: 100%;
     top: 100%;
     margin: 0;
+    transition: 0.4s;
     .container {
       padding: 0;
+    }
+    &:has(.navigation._active) {
+      z-index: 999;
     }
   }
 }
@@ -579,7 +583,6 @@ path {
   object-fit: cover;
   z-index: -1;
   @media (max-width: 992px) {
-    width: calc(100% - 60px);
     margin: auto;
     left: 0;
     right: 0;
