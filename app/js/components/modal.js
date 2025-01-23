@@ -47,3 +47,5 @@ window.addEventListener('keydown', (event) => {
         });
     }
 });
+
+export { openModal }

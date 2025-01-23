@@ -111,12 +111,11 @@
 
 .close {
   position: absolute;
-  top: 9px;
+  top: 2px;
   right: 18px;
-  font-size: 40px;
-  font-family: var(--fontsUnbounded);
-  font-weight: 300;
-  color: var(--bg-primary);
+  font-size: 50px;
+  font-weight: 200;
+  color: var(--bg-red);
   cursor: pointer;
   &:hover,
   &:focus {

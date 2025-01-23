@@ -1,0 +1,140 @@
+section.etap-s---picture {
+  background: transparent;
+  h2 {
+    color: var(--bg-primary);
+  }
+  .etap-s__wrap {
+    .etap-s__element {
+      border: 1px solid rgb(8, 57, 57);
+      h3 {
+        color: var(--bg-primary);
+        transition: 0.4s;
+        svg {
+          width: 12px;
+          height: 12px;
+          display: none;
+        }
+      }
+      &:nth-of-type(5) {
+        grid-column: 3/1;
+        height: 263px;
+      }
+      &:nth-of-type(6) {
+        grid-column: 4/3;
+        height: 263px;
+      }
+      &:nth-of-type(7) {
+        grid-column: 5/4;
+        height: 263px;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        transition: 0.4s;
+        opacity: 0;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(30, 36, 36, 0) 10.003%,
+          rgb(30, 36, 36) 100%
+        );
+        z-index: -1;
+        transition: 0.4s;
+        opacity: 0;
+      }
+      &:hover {
+        h3 {
+          color: #fff;
+        }
+        img {
+          opacity: 1;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      .etap-s__element {
+        height: auto !important;
+        transition: 1s;
+        h3 {
+          svg {
+            display: inline-block;
+          }
+        }
+        &:hover {
+          justify-content: flex-end;
+          height: 145px !important;
+        }
+      }
+    }
+  }
+}
+
+.fasad-block {
+  background: var(--bg-primary);
+  color: #fff;
+  h2 {
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+  @media (max-width: 992px) {
+    .container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+.fasad-block-variants {
+  font-size: 16px;
+  font-weight: 200;
+  padding-left: 20px;
+  li {
+    list-style: disc;
+  }
+}
+
+.fasad-block__right {
+  img {
+    width: 551px;
+    height: auto;
+  }
+  @media (max-width: 992px) {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+section.main-page-exterjer {
+  picture img {
+    object-position: 0;
+  }
+  &:after {
+    display: none;
+  }
+  @media (max-width: 992px) {
+    .main-content-page ul li {
+      margin-bottom: 5px;
+    }
+  }
+}

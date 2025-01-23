@@ -7,8 +7,28 @@ const pages = [
     'index',
     'proektirovanie',
     'partnerstvo',
-    'card'
+    'stroitelstvo',
+    'card',
+    'post',
+    'catalog',
+    'design',
+    'landshaft',
+    'contacts',
+    'partners',
+    'otzivy',
+    'otzivys',
+    'gallery',
+    'video',
+    'company',
+    'exterjer',
+    'enginering',
+    'portfolio',
+    'stati',
+    'stati-page',
+    'portfolios',
+    'portfolios-2'
 ];
+
 
 
 const htmlPlugins = pages.map(page => new HtmlWebpackPlugin({

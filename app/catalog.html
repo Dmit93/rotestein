@@ -359,84 +359,357 @@
         </div>
     </header>
     <main>
-        <section class="main-part main-part-card">
+
+        <section class="catalog-main-top">
             <div class="container">
-                <div class="main-content-page">
-                    <h1 class="h1-page">ДОМ В МАКАРОВО
-                    </h1>
-                    <p class="main-content-page__text">Проект виллы в стиле хай тек с просторной террасой для семьи с
-                        детьми</p>
-                    <button class="btn btn-white">Заказать проект</button>
-                </div>
-                <div class="main-part-card__box">
-                    <div class="main-part-card__box--slider">
-                        <img src="./img/house.jpg" alt="">
+                <div class="catalog-main-top__content">
+                    <h1>КАТАЛОГ ПРОЕКТОВ ДОМОВ И КОТТЕДЖЕЙ</h1>
+                    <div class="catalog-main-top__text">
+                        В каталоге Rotenstein представлены наиболее популярные проекты элитных домов и коттеджей
+                        для комфортного проживания за городом. В нашем портфолио вы найдёте готовые проекты с подробными
+                        планировками этажей, характеристиками и ценами на строительство под ключ.
+                        <br><br>
+                        Проектная документация может быть изменена в соответствии с предпочтениями заказчика,
+                        адаптирована к особенностям земельного участка и конкретным условиям эксплуатации в Москве,
+                        Московской области или регионах России.
                     </div>
-                    <h2 class="h2-title h2-margin">О проекте</h2>
-                    <div class="main-parg-card__box--content">
-                        <div class="main-part-card__box--content__item">
-                            <span>851 м<sup>2</sup></span>
-                            <p>Площадь</p>
+                </div>
+                <img alt="" src="./img/catalog-main.png">
+            </div>
+        </section>
+
+        <section class="catalog-items">
+            <div class="container">
+                <button class="btn-mobile-filter">
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="27" height="27" fill="url(#pattern0_13_289)" />
+                        <defs>
+                            <pattern id="pattern0_13_289" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_13_289" transform="scale(0.037037)" />
+                            </pattern>
+                            <image id="image0_13_289" width="27" height="27"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB7ZUxD8FAFMdfhEUMRomlqxUfoGaJjQRfwOhzsBjsIuJzSKwGEjGJsBKDASv/axtDud69izQN/SW/pLnXf18ueXclivk1ssx1VU2KDTeS2gzWJZmFJEMJ+j5pCrEZRb5ZBqZgkvQJzMiateAE3uGW9CbMJOOwhDXvWUxex1f/NI2qjHRnF1iBeWjBE6kxyTiIl/fwAUe+Wg6uYc+3XgjIKLHp/VBb8Ain3ocHGpkX3NEvkrurNqzCJifMGWvBGZa8ZmW444S5zeawC4fkjneDEza5QcZwBfvwwMj96d0oDuk1oHZjZpSE9qeOiSZPCr4v+URf4+MAAAAASUVORK5CYII=" />
+                        </defs>
+                    </svg>
+                    <span>Фильтры</span>
+                </button>
+                <div class="catalog-items__wrapp">
+                    <div class="filter">
+                        <div class="filter__container">
+                            <h2 class="h2-title">Фильтры</h2>
+                            <div class="search-project">
+                                <input type="text" placeholder="Название проекта...">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_9_852)">
+                                        <g clip-path="url(#clip1_9_852)">
+                                            <g clip-path="url(#clip2_9_852)">
+                                                <path
+                                                    d="M5.84191 10.8815C8.581 10.8815 10.8015 8.66104 10.8015 5.92193C10.8015 3.18283 8.581 0.962341 5.84191 0.962341C3.1028 0.962341 0.882324 3.18283 0.882324 5.92193C0.882324 8.66104 3.1028 10.8815 5.84191 10.8815Z"
+                                                    stroke="#D1D1D1" stroke-width="0.882353" stroke-miterlimit="10" />
+                                                <path d="M14.1178 14.1978L9.35376 9.4339" stroke="#D1D1D1"
+                                                    stroke-width="0.882353" stroke-miterlimit="10" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_9_852">
+                                            <rect width="15" height="15" fill="white"
+                                                transform="translate(0 0.0800171)" />
+                                        </clipPath>
+                                        <clipPath id="clip1_9_852">
+                                            <rect width="15" height="15" fill="white"
+                                                transform="translate(0 0.0800171)" />
+                                        </clipPath>
+                                        <clipPath id="clip2_9_852">
+                                            <rect width="15" height="15" fill="white"
+                                                transform="translate(0 0.0800171)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                            <div class="filter-ploshad">
+                                <p class="filter-title">Площадь</p>
+                                <div class="range-container">
+                                    <div class="range-slider">
+                                        <input type="range" min="0" max="5000" value="0" class="thumb minRange">
+                                        <input type="range" min="0" max="5000" value="5000" class="thumb maxRange">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-values">
+                                        <input type="text" class="minValue">
+                                        <input type="text" class="maxValue">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-col">
+                                <p class="filter-title">Этажность
+                                    <svg width="12.969999" height="7.133942" viewBox="0 0 12.97 7.13394" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path
+                                            d="M1.05 7.13L0 6.07L5.77 0.29C5.86 0.2 5.97 0.12 6.1 0.07C6.22 0.02 6.35 0 6.48 0C6.61 0 6.74 0.02 6.86 0.07C6.98 0.12 7.09 0.2 7.19 0.29L12.97 6.07L11.91 7.13L6.48 1.7L1.05 7.13Z"
+                                            fill="#D1D1D1" fill-opacity="1.000000" fill-rule="nonzero" />
+                                    </svg>
+
+                                </p>
+                                <div class="filter-col__fields">
+                                    <label for="field-1">
+                                        <div class="checkbox-c">
+                                            <input type="checkbox" id="field-1">
+                                            <span></span>
+                                        </div>
+                                        <span>1 этаж</span>
+                                    </label>
+                                    <label for="field-2">
+                                        <div class="checkbox-c">
+                                            <input type="checkbox" id="field-2">
+                                            <span></span>
+                                        </div>
+                                        <span>1 этаж</span>
+                                    </label>
+                                    <label for="field-3">
+                                        <div class="checkbox-c">
+                                            <input type="checkbox" id="field-3">
+                                            <span></span>
+                                        </div>
+                                        <span>1 этаж</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-col">
+                                <p class="filter-title">Количество спален</p>
+                                <div class="filter-col__fields">
+                                    <label for="field-1">
+                                        <div class="checkbox-c">
+                                            <input type="checkbox" id="field-1">
+                                            <span></span>
+                                        </div>
+                                        <span>Прованс</span>
+                                    </label>
+                                    <label for="field-2">
+                                        <div class="checkbox-c">
+                                            <input type="checkbox" id="field-2">
+                                            <span></span>
+                                        </div>
+                                        <span>Средиземноморский</span>
+                                    </label>
+                                    <label for="field-3">
+                                        <div class="checkbox-c">
+                                            <input type="checkbox" id="field-3">
+                                            <span></span>
+                                        </div>
+                                        <span>Ар-деко</span>
+                                    </label>
+                                    <label for="field-3">
+                                        <div class="checkbox-c">
+                                            <input type="checkbox" id="field-3">
+                                            <span></span>
+                                        </div>
+                                        <span>Ар-деко</span>
+                                    </label>
+                                    <label for="field-3">
+                                        <div class="checkbox-c">
+                                            <input type="checkbox" id="field-3">
+                                            <span></span>
+                                        </div>
+                                        <span>Английский</span>
+                                    </label>
+                                    <label for="field-3">
+                                        <div class="checkbox-c">
+                                            <input type="checkbox" id="field-3">
+                                            <span></span>
+                                        </div>
+                                        <span>Современный</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="main-part-card__box--content__item">
-                            <span>1</span>
-                            <p>Наличие гаража</p>
+                        <div class="filter__btn">
+                            <button class="btn">Показать</button>
+                            <button class="reset">Показать</button>
                         </div>
-                        <div class="main-part-card__box--content__item">
-                            <span>4</span>
-                            <p>Количество спален</p>
+                    </div>
+                    <div class="catalog-items__container">
+                        <div class="catalog-items__item">
+                            <img src="./img/house.jpg" alt="">
+                            <div class="catalog-items__content">
+                                <div class="catalog-items__top">
+                                    <span class="catalog-items__type">Виллы</span>
+                                    <span class="catalog-items__size">851 м<sup>2</sup></span>
+                                </div>
+                                <h3 class="catalog-items__title">ДОМ В МАКАРОВО</h3>
+                                <div class="catalog-items__info">
+                                    <div><span>1</span> этаж</div>
+                                    <div><span>1</span> Спален</div>
+                                    <div><span>1</span> Санузлов</div>
+                                    <div><span>1</span> Гараж</div>
+                                    <div><span>Хай Тек</span> Стиль</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="main-part-card__box--content__item">
-                            <span>4</span>
-                            <p>Количество санузлов</p>
+                        <div class="catalog-items__item">
+                            <img src="./img/house.jpg" alt="">
+                            <div class="catalog-items__content">
+                                <div class="catalog-items__top">
+                                    <span class="catalog-items__type">Виллы</span>
+                                    <span class="catalog-items__size">851 м<sup>2</sup></span>
+                                </div>
+                                <h3 class="catalog-items__title">РЕЗИДЕНЦИЯ В НОВОИЛЬИНСКОМ</h3>
+                                <div class="catalog-items__info">
+                                    <div><span>1</span> этаж</div>
+                                    <div><span>1</span> Спален</div>
+                                    <div><span>1</span> Санузлов</div>
+                                    <div><span>1</span> Гараж</div>
+                                    <div><span>Райт
+                                            Современный</span> Стиль</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="main-part-card__box--content__item">
-                            <span>2</span>
-                            <p>Количество этажей</p>
+                    </div>
+                </div>
+                <div class="catalog-items__controls">
+                    <div class="more-ajax">
+                        <button class="btn">Показать еще</button>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>...</li>
+                            <li>9</li>
+                        </ul>
+                        <button class="pagination-next">></button>
+                        <button class="pagination-next-max">>></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-text-c">
+            <div class="container">
+                <div class="block-text-c__wrapp">
+                    <div class="block-text-c__wrapp--left">
+                        <h2 class="h2-title">СТРОИТЕЛЬСТВО ЗАГОРОДНОГО ДОМА ПО ГОТОВОМУ ПРОЕКТУ</h2>
+                        <div class="block-text-c__text">
+                            Представленные в каталоге проекты загородных домов были разработаны специалистами компании
+                            Rotenstein для их дальнейшего строительства. Готовые проекты содержат полный перечень
+                            чертежей, визуализаций, смет и других документов, необходимых для постройки надёжного
+                            и долговечного коттеджа под ключ.
+                            <br><br>
+                            С помощью применения различных фильтров вы можете настроить параметры поиска нужного
+                            вам проекта, например по материалу стен (клеёный брус, кирпич, керамоблоки, газобетон),
+                            есть варианты различной этажности, с балконами, террасами, гаражами и пр. Выберите
+                            понравившийся проект, а специалисты Rotenstein внесут изменения согласно вашим пожеланиям
+                            и построят дом, который прослужит многие десятилетия.
                         </div>
-                        <div class="main-part-card__box--content__item">
-                            <span>Хай Тек</span>
-                            <p>Стиль</p>
+                    </div>
+                    <img class="right-img-absolute" src="./img/catalog-m.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="block-text-c block-text-c--green">
+            <div class="container">
+                <div class="block-text-c__wrapp">
+                    <div class="block-text-c__wrapp--left">
+                        <h2 class="h2-title">Доработка готовых проектов<br> домов и коттеджей</h2>
+                        <div class="block-text-c__text">
+                            Любой типовой проект из каталога Rotenstein можно доработать с архитектором: изменить
+                            материал отделки фасада, добавить или убрать террасу, изменить площадь жилых комнат, их
+                            назначение и многое другое. Стоит отметить, что внесенные в проект дома изменения могут
+                            отразиться на итоговой смете как в большую, так и в меньшую сторону.
+                            <br><br>
+                            Для адаптации проектной документации под пожелания заказчика и земельный участок может
+                            потребоваться от нескольких дней до месяца - это зависит от количества и объема планируемых
+                            изменений. Если доработать потребуется более 50-70% конструктивных элементов или внести
+                            изменения в несущие конструкции коттеджа, то лучше выбрать индивидуальное проектирование.
+                            Как правило, индивидуальный проект дома обойдется дороже типового, но наградой станет уютный
+                            дом с удобной планировкой и оригинальным дизайном, в котором будет комфортно всем членам
+                            семьи.
                         </div>
                     </div>
                 </div>
             </div>
-            <img class="house-image" src="./img/background-line.png" alt="Modern House">
         </section>
 
-
-
-        <section class="section-images-all">
+        <section class="section-line-green">
             <div class="container">
-                <div class="section-images-all__container">
-                    <div class="section-images-all__item">
-                        <img src="./img/house.jpg" alt="">
-                    </div>
-                    <div class="section-images-all__item">
-                        <img src="./img/house.jpg" alt="">
-                    </div>
-                    <div class="section-images-all__item">
-                        <img src="./img/house.jpg" alt="">
-                    </div>
+                <div class="section-expertiza__top ">
+                    <p>Получите бесплатную консультацию</p>
+                    <a href="" class="btn btn-white">Обратный звонок</a>
                 </div>
+
             </div>
         </section>
 
-        <section class="info-project">
+        <section class="block-col-question">
             <div class="container">
-                <h2 class="h2-title h2-margin">О проекте</h2>
-                <p class="info-project__text">Дом в Макарово - это проект двухэтажного дома в современном стиле для
-                    большой семьи с
-                    возможностью проживания персонала.
-                    При его проектировании главной задачей было подобрать наилучшее расположение дома на небольшом
-                    угловом участке с учетом инсоляции основных помещений.</p>
+                <h2 class="h2-title h2-red">Что лучше: заказать готовый проект дома или индивидуальный?</h2>
+                <div class="block-col-question__wrapp">
+                    <div class="block-col-question__wrapp--left">
+                        <div class="block-col-question__item">
+                            <p class="block-col-question--title">Готовый проект</p>
+                            <div class="block-col-question__item--text">
+                                Готовые (типовые) проекты домов разрабатываются на основе конструктивных и архитектурных
+                                решений, проверенных на практике. Инженерным отделом просчитаны все узлы, детали,
+                                нагрузка на стены и многие другие нюансы, скрытые от глаз обывателя. Загородные дома,
+                                построенные по готовым не уступают в надежности и долговечности домам, созданным по
+                                индивидуальным проектам.<br><br>
+                                От квалификации исполнителей в значительной степени
+                                зависит
+                                качество внесенных изменений и, как следствие, уровень итоговой проектной документации.
+                                Даже небольшие ошибки и недочеты обернуться серьезными проблемами, поэтому мы
+                                рекомендуем заказывать дома по готовому проекту в компании, которая их проектировала и
+                                строила.
+                                <br><br>
+                                Наш каталог готовых проектов постоянно пополняется. Кстати, мы не называем их
+                                типовыми. Все представленные проекты были разработаны нашими архитекторами. Мы следим за
+                                трендами, перерабатывая всю информацию и разрабатывая новые проекты.
+                            </div>
+                        </div>
+                        <div class="block-col-question__item">
+                            <p class="block-col-question--title block-col-question--title--green">Преимущества</p>
+                            <div class="block-col-question__item--text">
+                                <ul>
+                                    <li>Экономия времени и бюджета. Этап согласования исключается - сразу можно закупать
+                                        материалы и начинать строительство;</li>
+                                    <li> Готовые проекты дешевле индивидуальных, но не каждый проект можно удачно
+                                        посадить
+                                        на участок;</li>
+                                    <li> Экономия времени. Стройка начинается буквально через несколько дней после
+                                        решения о
+                                        работе по проекту;</li>
+                                    <li> Технологии. Технология и процесс строительства отработаны до мелочей;</li>
+                                    <li> Стоимость и сроки. Практически сразу стоимость и сроки строительства известны.
+                                    </li>
+                                </ul>
+                            </div>
 
-                <div class="section-expertiza__content section-expertiza__content--max">
-                    <div class="section-expertiza__left">
+                        </div>
+                        <div class="block-col-question__item">
+                            <p class="block-col-question--title block-col-question--title--red">Недостатки</p>
+                            <div class="block-col-question__item--text">
+                                <ul>
+                                    <li>Невозможно внести существенные изменения. Все просчеты уже выполнены, можно
+                                        изменить
+                                        лишь то, что не будет касаться несущих конструкций. Специалисты Rotenstein
+                                        всегда
+                                        подскажут вам какие изменения можно сделать в выбранном вами проекте;</li>
+                                    <li> Нет возможности полностью адаптировать проект под индивидуальные потребности и
+                                        характеристики каждого члена семьи.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <ol class="list-number-variants">
                             <li>
                                 <div class="accordion-top">
-                                    <span>ПРОЕКТИРОВАНИЕ</span>
+                                    <span class="block-col-question--title--green">Преимущества</span>
                                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -445,33 +718,31 @@
                                     </svg>
                                 </div>
                                 <div class="accordion-content">
-                                    <p>Это основополагающая часть проекта, которая содержит подробные решения всех
-                                        элементов дома: состав стен, перегородок, кладочные планы и фасады, чертежи
-                                        дверей, окон, ведомость материалов и тд. АР учитывает многочисленные СНИПы, а
-                                        также технические, экологические требования и т.д. Новейший софт BIM. На его
-                                        основе разрабатывается конструктивный проект, проект инженерных систем и дизайн
-                                        проект интерьера</p>
-                                    <div class="accordion-list">
-                                        <span>Архитектурный раздел содержит:</span>
+                                    <div class="block-col-question__item--text">
                                         <ul>
-                                            <li>Общие данные</li>
-                                            <li>Геология и топосъемка</li>
-                                            <li>Схема планировочной организации участка (СПОЗУ)</li>
-                                            <li>Схемы фундаментов</li>
-                                            <li>Планы этажей</li>
-                                            <li>План кровли</li>
-                                            <li>План водосточной системы</li>
-                                            <li>Разрезы</li>
-                                            <li>Фасады</li>
-                                            <li>Фотореалистичные 3D-визуализации</li>
+                                            <li>Экономия времени и бюджета. Этап согласования исключается - сразу можно
+                                                закупать
+                                                материалы и начинать строительство;</li>
+                                            <li> Готовые проекты дешевле индивидуальных, но не каждый проект можно
+                                                удачно
+                                                посадить
+                                                на участок;</li>
+                                            <li> Экономия времени. Стройка начинается буквально через несколько дней
+                                                после
+                                                решения о
+                                                работе по проекту;</li>
+                                            <li> Технологии. Технология и процесс строительства отработаны до мелочей;
+                                            </li>
+                                            <li> Стоимость и сроки. Практически сразу стоимость и сроки строительства
+                                                известны.
+                                            </li>
                                         </ul>
                                     </div>
-                                    <button class="btn">Заказать проект</button>
                                 </div>
                             </li>
                             <li>
                                 <div class="accordion-top">
-                                    <span>ПРОЕКТИРОВАНИЕ</span>
+                                    <span class="block-col-question--title--red">Недостатки</span>
                                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -480,269 +751,158 @@
                                     </svg>
                                 </div>
                                 <div class="accordion-content">
-                                    <p>Это основополагающая часть проекта, которая содержит подробные решения всех
-                                        элементов дома: состав стен, перегородок, кладочные планы и фасады, чертежи
-                                        дверей, окон, ведомость материалов и тд. АР учитывает многочисленные СНИПы, а
-                                        также технические, экологические требования и т.д. Новейший софт BIM. На его
-                                        основе разрабатывается конструктивный проект, проект инженерных систем и дизайн
-                                        проект интерьера</p>
-                                    <div class="accordion-list">
-                                        <span>Архитектурный раздел содержит:</span>
+                                    <div class="block-col-question__item--text">
                                         <ul>
-                                            <li>Общие данные</li>
-                                            <li>Геология и топосъемка</li>
-                                            <li>Схема планировочной организации участка (СПОЗУ)</li>
-                                            <li>Схемы фундаментов</li>
-                                            <li>Планы этажей</li>
-                                            <li>План кровли</li>
-                                            <li>План водосточной системы</li>
-                                            <li>Разрезы</li>
-                                            <li>Фасады</li>
-                                            <li>Фотореалистичные 3D-визуализации</li>
+                                            <li>Невозможно внести существенные изменения. Все просчеты уже выполнены,
+                                                можно
+                                                изменить
+                                                лишь то, что не будет касаться несущих конструкций. Специалисты
+                                                Rotenstein
+                                                всегда
+                                                подскажут вам какие изменения можно сделать в выбранном вами проекте;
+                                            </li>
+                                            <li> Нет возможности полностью адаптировать проект под индивидуальные
+                                                потребности и
+                                                характеристики каждого члена семьи.
+                                            </li>
                                         </ul>
                                     </div>
-                                    <button class="btn">Заказать проект</button>
                                 </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>ПРОЕКТИРОВАНИЕ</span>
-                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
-                                            fill="#083939" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>ПРОЕКТИРОВАНИЕ</span>
-                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
-                                            fill="#083939" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>ПРОЕКТИРОВАНИЕ</span>
-                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
-                                            fill="#083939" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>ПРОЕКТИРОВАНИЕ</span>
-                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
-                                            fill="#083939" />
-                                    </svg>
-                                </a>
                             </li>
                         </ol>
                     </div>
 
+                    <div class="block-col-question__wrapp--right">
+                        <div class="block-col-question__item">
+                            <p class="block-col-question--title">Индивидуальный проект</p>
+                            <div class="block-col-question__item--text">
+                                Индивидуальное проектирование – это вариант для тех, кто хочет получить максимально
+                                комфортное жилье, учитывающее ритм жизни владельцев, состав семьи, особенности
+                                участка и
+                                прочие факторы, способные повлиять на уют в будущем доме.<br><br>В рамках
+                                предпроектной
+                                подготовки мы определим наиболее важные пожелания, подготовим стилистическую
+                                концепцию,
+                                подскажем, как будет реализован дизайн вашего собственного загородного дома. После
+                                утверждения эскизов и схем, мы переходим к проведению гидрогеологических и
+                                геодезических
+                                изысканий, готовим планы и чертежи, архитектурный проект, создаем рабочую
+                                документацию
+                                для строителей.<br><br>Специалисты ROTENSTEIN с 2011 года успешно разработали более
+                                286
+                                индивидуальных проектов, и участвовали в строительстве более 457 объектов по всей
+                                России. Поэтому наши проектные решения привязаны к реальному опыту, современным
+                                технологиям строительства и превосходят ожидания клиентов!
+                            </div>
 
-                </div>
-            </div>
-        </section>
-
-        <section class="section-layout">
-            <div class="container">
-                <h2 class="h2-title h2-margin">планировка</h2>
-                <div class="tabs-block">
-                    <div class="layout-tabs tabs">
-
-                        <div class="tab" data-tab="1">1 этаж</div>
-                        <div class="tab" data-tab="2">2 этаж</div>
-                        <div class="tab" data-tab="3">Спа-комплекс</div>
-                    </div>
-                    <div class="layout-tabs__content">
-                        <div class="tab-content" data-tab="1">
-                            <img src="./img/house.jpg" alt="">
                         </div>
-                        <div class="tab-content" data-tab="2">
-                            <h2>Content for Tab 2</h2>
-                            <p>This is the content for tab 2.</p>
-                        </div>
-                        <div class="tab-content" data-tab="3">
-                            <h2>Content for Tab 3</h2>
-                            <p>This is the content for tab 3.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <div class="block-col-question__item">
+                            <p class="block-col-question--title block-col-question--title--green">Преимущества</p>
+                            <div class="block-col-question__item--text">
+                                <ul>
+                                    <li>Вы напрямую работаете с архитектором, который учитывает все ваши требования;
+                                    </li>
+                                    <li> Адаптация под размеры участка, учитывается выбор строительных материалов и
+                                        ориентировочная стоимость строительства;</li>
+                                    <li> Возможность внесения любых изменений;</li>
+                                    <li> Можно воплотить сложные идеи, использовать нестандартные технологии
+                                        строительства, реализовать необычные проекты.
+                                    </li>
+                                </ul>
+                            </div>
 
-
-        <section class="section-projects-similar">
-            <div class="container">
-                <h2 class="h2-title h2-margin">Похожие проеткы</h2>
-                <div class="section-projects-similar__content swiper-custom-arrow">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="section-projects-similar__item swiper-slide">
-                                <a href="" class="section-projects-similar__link">
-                                    <img src="./img/house.jpg" alt="">
-                                </a>
-                                <div class="house-info">
-                                    <div class="house-info--line">
-                                        <span class="house-type">Виллы</span>
-                                        <span class="house-size">851 м<sup>2</sup></span>
+                        </div>
+                        <div class="block-col-question__item">
+                            <p class="block-col-question--title block-col-question--title--red">Недостатки</p>
+                            <div class="block-col-question__item--text">
+                                <ul>
+                                    <li>
+                                        Индивидуальное проектирование предполагает создание уникального загородного
+                                        дома
+                                        с учетом особенностей каждого члена семьи. Такая работа требует немало
+                                        трудозатрат и компетенций и потому не может быть дешевой; </li>
+                                    <li> Если после покупки типового проекта можно сразу же приступать к
+                                        строительству
+                                        коттеджа, то разработка индивидуального требует времени. Чем оригинальнее
+                                        задумка заказчика, тем больше времени потребуется на воплощение ее в жизнь.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ol class="list-number-variants">
+                            <li>
+                                <div class="accordion-top">
+                                    <span class="block-col-question--title--green">Преимущества</span>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="block-col-question__item--text">
+                                        <ul>
+                                            <li>Вы напрямую работаете с архитектором, который учитывает все ваши
+                                                требования;
+                                            </li>
+                                            <li> Адаптация под размеры участка, учитывается выбор строительных
+                                                материалов и
+                                                ориентировочная стоимость строительства;</li>
+                                            <li> Возможность внесения любых изменений;</li>
+                                            <li> Можно воплотить сложные идеи, использовать нестандартные технологии
+                                                строительства, реализовать необычные проекты.
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <h3>ДОМ В МАКАРОВО</h3>
                                 </div>
-                            </div>
-                            <div class="section-projects-similar__item swiper-slide">
-                                <a href="" class="section-projects-similar__link">
-                                    <img src="./img/house.jpg" alt="">
-                                </a>
-                                <div class="house-info">
-                                    <div class="house-info--line">
-                                        <span class="house-type">Виллы</span>
-                                        <span class="house-size">851 м<sup>2</sup></span>
+                            </li>
+                            <li>
+                                <div class="accordion-top">
+                                    <span class="block-col-question--title--red">Недостатки</span>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.831737 19.8317C0.186523 20.4769 0.186523 21.523 0.831737 22.1683C1.47695 22.8135 2.52305 22.8135 3.16826 22.1683L0.831737 19.8317ZM22.6522 2C22.6522 1.08753 21.9125 0.347826 21 0.347826H6.13043C5.21796 0.347826 4.47826 1.08753 4.47826 2C4.47826 2.91247 5.21796 3.65217 6.13043 3.65217H19.3478V16.8696C19.3478 17.782 20.0875 18.5217 21 18.5217C21.9125 18.5217 22.6522 17.782 22.6522 16.8696V2ZM3.16826 22.1683L22.1683 3.16826L19.8317 0.831737L0.831737 19.8317L3.16826 22.1683Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="block-col-question__item--text">
+                                        <ul>
+                                            <li>
+                                                Индивидуальное проектирование предполагает создание уникального
+                                                загородного
+                                                дома
+                                                с учетом особенностей каждого члена семьи. Такая работа требует немало
+                                                трудозатрат и компетенций и потому не может быть дешевой; </li>
+                                            <li> Если после покупки типового проекта можно сразу же приступать к
+                                                строительству
+                                                коттеджа, то разработка индивидуального требует времени. Чем
+                                                оригинальнее
+                                                задумка заказчика, тем больше времени потребуется на воплощение ее в
+                                                жизнь.
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <h3>ДОМ В МАКАРОВО</h3>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-projects-unique">
-            <div class="container">
-                <h2 class="h2-title h2-margin">НАШИ РАБОТы</h2>
-                <div class="section-projects-unique__content">
-                    <a href="" class="section-projects-unique__item">
-                        <div class="section-projects-unique__link">
-                            <img src="./img/house.jpg" alt="">
-                        </div>
-                        <div class="house-info">
-                            <div class="house-info--line">
-                                <span class="house-type">Виллы</span>
-                                <span class="house-size">851 м<sup>2</sup></span>
-                            </div>
-                            <h3>ДОМ В МАКАРОВО</h3>
-                        </div>
-                    </a>
-                    <a href="" class="section-projects-unique__item">
-                        <div class="section-projects-unique__link">
-                            <img src="./img/house.jpg" alt="">
-                        </div>
-                        <div class="house-info">
-                            <div class="house-info--line">
-                                <span class="house-type">Виллы</span>
-                                <span class="house-size">851 м<sup>2</sup></span>
-                            </div>
-                            <h3>ДОМ В МАКАРОВО</h3>
-                        </div>
-                    </a>
-                    <div class="section-projects-unique__item video-block">
-                        <img src="./img/house.jpg" alt="">
+                            </li>
+                        </ol>
                     </div>
                 </div>
+
             </div>
-        </section>
-
-        <section class="section-expertiza-not-margin">
-            <div class="container">
-                <div class="section-expertiza__top ">
-                    <p>Вышлем стоимость проекта или рассчитаем индивидуально</p>
-                    <a href="" class="btn">Оставить заявку</a>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="otzivy">
-            <div class="container">
-                <h2 class="h2-title h2-margin">Отзывы</h2>
-                <div class="otzivy__content swiper-custom-arrow">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="otzivy__item swiper-slide">
-                                <div class="otzyvy__text">
-                                    Добрый день! Сегодня будет осуществляться тех.приемка кровли в окончательном виде.
-                                    Хотел
-                                    бы
-                                    всех поблагодарить, что несмотря на все нюансы все закончилось хорошо. Отдельно
-                                    хотел бы
-                                    отметить работу бригады кровельщиков под руководством Дмитрия . Пришлось работать в
-                                    непростых осенне-зимних условиях в прошлом году им и консервировать кровлю, а в мае
-                                    снова
-                                    возобновлять работы. Все было сделано качественно и быстро. Еще раз большое спасибо
-                                    ребятам.
-                                    Часто был на стройке. Люди трудились с душой.
-                                </div>
-                                <div class="otzyvy__info">
-                                    <div class="otzyvy__name">Ольга</div>
-                                </div>
-                            </div>
-                            <div class="otzivy__item swiper-slide">
-                                <div class="otzyvy__text">
-                                    Добрый день! Сегодня будет осуществляться тех.приемка кровли в окончательном виде.
-                                    Хотел
-                                    бы
-                                    всех поблагодарить, что несмотря на все нюансы все закончилось хорошо. Отдельно
-                                    хотел бы
-                                    отметить работу бригады кровельщиков под руководством Дмитрия . Пришлось работать в
-                                    непростых осенне-зимних условиях в прошлом году им и консервировать кровлю, а в мае
-                                    снова
-                                    возобновлять работы. Все было сделано качественно и быстро. Еще раз большое спасибо
-                                    ребятам.
-                                    Часто был на стройке. Люди трудились с душой.
-                                </div>
-                                <div class="otzyvy__info">
-                                    <div class="otzyvy__name">Ольга</div>
-                                </div>
-                            </div>
-                            <div class="otzivy__item swiper-slide">
-                                <div class="otzyvy__text">
-                                    Добрый день! Сегодня будет осуществляться тех.приемка кровли в окончательном виде.
-                                    Хотел
-                                    бы
-                                    всех поблагодарить, что несмотря на все нюансы все закончилось хорошо. Отдельно
-                                    хотел бы
-                                    отметить работу бригады кровельщиков под руководством Дмитрия . Пришлось работать в
-                                    непростых осенне-зимних условиях в прошлом году им и консервировать кровлю, а в мае
-                                    снова
-                                    возобновлять работы. Все было сделано качественно и быстро. Еще раз большое спасибо
-                                    ребятам.
-                                    Часто был на стройке. Люди трудились с душой.
-                                </div>
-                                <div class="otzyvy__info">
-                                    <div class="otzyvy__name">Ольга</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-
         </section>
 
 
         <section class="section-demo">
             <div class="container">
                 <h2 class="h2-title h2-margin">
-                    Приглашаем на <br>демо-экскурсию по<br> нашим объектам!
+                    КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА
                 </h2>
-                <button class="btn btn-white">Записаться на просмотр</button>
+                <p class="section-demo__text">Оформите заявку на сайте и мы ответим на <br>все интересующие вас вопросы
+                </p>
+                <button class="btn btn-white">Получить консультацию</button>
             </div>
             <img src="./img/demo-background.png" alt="">
         </section>
@@ -848,128 +1008,11 @@
         </div>
     </footer>
 
-    <div class="modal modal-preim" data-modal="#preim-1">
-        <div class="modal-content ">
+    <div class="modal modal-dinamic" data-modal="#filter-mobile">
+        <div class="modal-content">
             <span class="close" data-close>&times;</span>
             <div class="modal-content__body">
-                <div class="modal-content__title">
-                    <span>01</span>
-                    <p>Инновационные технологии проектирования</p>
-                </div>
-                <div class="modal-content__text">
-                    Благодаря применению собственных наработок и передовых BIM-технологий нашей компанией производится
-                    виртуальное моделирование строений с добавлением физических и функциональных характеристик. Это
-                    позволяет полностью исключить ошибки при проектировании, сократить материальные затраты за счёт
-                    точного расчёта объёмов необходимых материалов и оптимизировать процессы строительства дома.
-                </div>
-
             </div>
-            <img src="/img/modal-preim-1.png" alt="">
-        </div>
-    </div>
-
-    <div class="modal modal-preim" data-modal="#preim-2">
-        <div class="modal-content ">
-            <span class="close" data-close>&times;</span>
-            <div class="modal-content__body">
-                <div class="modal-content__title">
-                    <span>02</span>
-                    <p>Максимальная эксклюзивность</p>
-                </div>
-                <div class="modal-content__text">
-                    При создании индивидуального проекта наши архитекторы ориентируются на пожелания заказчика,
-                    особенности членов семьи и учитывают данные исследований земельного участка. Все это даёт
-                    возможность реализации мечты об идеальном доме для вашей семьи, выполненном в единственном в мире
-                    экземпляре.
-                </div>
-
-            </div>
-            <img src="/img/modal-preim-1.png" alt="">
-        </div>
-    </div>
-
-    <div class="modal modal-preim" data-modal="#preim-3">
-        <div class="modal-content ">
-            <span class="close" data-close>&times;</span>
-            <div class="modal-content__body">
-                <div class="modal-content__title">
-                    <span>03</span>
-                    <p>Удобные и функциональные планировки</p>
-                </div>
-                <div class="modal-content__text">
-                    Мы разрабатываем концепции планировок до тех пор, пока они полностью не удовлетворят заказчика.
-                    Создание функциональных помещений с грамотным зонированием и использованием всех площадей исходя из
-                    удобства, стиля жизни хозяев дома — является одним из наших ключевых приоритетов.
-                </div>
-
-            </div>
-            <img src="/img/modal-preim-1.png" alt="">
-        </div>
-    </div>
-
-
-    <div class="modal modal-preim" data-modal="#preim-4">
-        <div class="modal-content ">
-            <span class="close" data-close>&times;</span>
-            <div class="modal-content__body">
-                <div class="modal-content__title">
-                    <span>04</span>
-                    <p>Надежность и долговечность</p>
-                </div>
-                <div class="modal-content__text">
-                    Мы понимаем, что от точных расчётов и выбора правильных материалов зависит жизнь и здоровье людей,
-                    поэтому подходим к проектированию с максимальной ответственностью. Итогом является готовый для
-                    строительства проект дома со всеми необходимыми печатями, подписями и лицензией. Вместе с нашим
-                    внушительным опытом в проектировании и строительстве это является гарантией долговечности и
-                    надёжности вашего дома
-                </div>
-
-            </div>
-            <img src="/img/modal-preim-1.png" alt="">
-        </div>
-    </div>
-
-
-    <div class="modal modal-preim" data-modal="#preim-5">
-        <div class="modal-content ">
-            <span class="close" data-close>&times;</span>
-            <div class="modal-content__body">
-                <div class="modal-content__title">
-                    <span>05</span>
-                    <p>Весь комплекс работ</p>
-                </div>
-                <div class="modal-content__text">
-                    Rotenstein - это, в первую очередь, строительная компания, которая специализируется на элитной
-                    загородной недвижимости. Чаще всего к нам обращаются люди, желающие заказать архитектурное
-                    проектирование и строительство дома мечты под ключ. В нашей компании применяется многоступенчатый
-                    контроль качества, плановые и внеплановые проверки, которые осуществляются на каждом этапе
-                    выполнения работ.
-                </div>
-
-            </div>
-            <img src="/img/modal-preim-1.png" alt="">
-        </div>
-    </div>
-
-
-    <div class="modal modal-preim" data-modal="#preim-6">
-        <div class="modal-content ">
-            <span class="close" data-close>&times;</span>
-            <div class="modal-content__body">
-                <div class="modal-content__title">
-                    <span>06</span>
-                    <p>Действуем в рамках бюджета</p>
-                </div>
-                <div class="modal-content__text">
-                    Rotenstein - это, в первую очередь, строительная компания, которая специализируется на элитной
-                    загородной недвижимости. Чаще всего к нам обращаются люди, желающие заказать архитектурное
-                    проектирование и строительство дома мечты под ключ. В нашей компании применяется многоступенчатый
-                    контроль качества, плановые и внеплановые проверки, которые осуществляются на каждом этапе
-                    выполнения работ.
-                </div>
-
-            </div>
-            <img src="/img/modal-preim-1.png" alt="">
         </div>
     </div>
 

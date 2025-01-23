@@ -1,0 +1,175 @@
+.otzivys-page__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // grid-gap: 1em;
+  // grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  // grid-auto-rows: 150px;
+  align-items: flex-start;
+  grid-gap: 20px;
+  position: relative;
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    height: auto !important;
+  }
+}
+
+.otzivys-page__item {
+  background: #edf2f0;
+  padding: 22px;
+  position: absolute;
+  width: calc(33.333% - 10px); /* 3 колонки с отступом */
+  // padding: 20px;
+  margin-bottom: 10px; /* Отступ между элементами */
+  height: 123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  &:nth-of-type(-n + 2) {
+    margin-top: auto;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+  &:nth-of-type(3),
+  &:nth-child(6n + 5),
+  &:nth-child(6n + 7),
+  &:nth-child(6n + 9) {
+    height: 200px;
+  }
+  &:nth-child(6n + 4),
+  &:nth-child(6n + 6),
+  &:nth-child(6n + 8) {
+    height: 123px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../../img/site-engiring/otz-back.png);
+    background-size: cover;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.4s;
+  }
+  @media (max-width: 992px) {
+    position: relative;
+    height: auto !important;
+    left: 0 !important;
+    top: 0 !important;
+    min-height: 110px;
+    width: 100%;
+    padding: 22px 10px;
+    margin-bottom: 0;
+  }
+}
+
+.otzivys-page__item--img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.otzivys-page__item--top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  z-index: 2;
+  svg {
+    height: 12px;
+    width: auto;
+  }
+}
+
+.otzivys-page__item--name {
+  font-weight: 200;
+}
+
+.otzivys-page__item--stars {
+  display: flex;
+}
+
+.otzivys-page__bottom {
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--fontsUnbounded);
+  text-transform: uppercase;
+  cursor: pointer;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover {
+    svg {
+      transform: translateX(10px) rotate(90deg);
+      path {
+        fill: var(--bg-red);
+      }
+    }
+  }
+  svg {
+    width: 15px;
+    height: 20px;
+    transform: translateX(10px);
+    transition: 0.4s;
+  }
+}
+
+.modal-otzivis {
+  .modal-content {
+    padding: 22px 30px 64px 30px;
+    max-width: 1160px;
+    position: relative;
+    overflow: hidden;
+    &:after {
+      content: "”";
+      position: absolute;
+      bottom: 62px;
+      right: -3px;
+      font-size: 160px;
+      color: #edf2f0;
+      line-height: 0;
+      font-family: var(--fontsUnbounded);
+      transform: scale(1, -1);
+      z-index: -1;
+    }
+    &:before {
+      content: "“";
+      position: absolute;
+      top: 59px;
+      left: -4px;
+      right: 0;
+      font-size: 160px;
+      color: #edf2f0;
+      line-height: 0;
+      font-family: var(--fontsUnbounded);
+      z-index: -1;
+    }
+  }
+  .otzivys-page__item--top {
+    gap: 15px;
+  }
+  .otzivys-page__item--name {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: var(--fontsUnbounded);
+    color: var(--bg-primary);
+  }
+}
+
+.modal-otzivis--body {
+  font-weight: 200;
+}

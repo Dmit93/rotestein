@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotenstein</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="/img/logo.svg" alt="Rotenstein Logo">
+                </div>
+                <div class="header-container--sect">
+                    <div class="contact-info">
+                        <div class="header-contacts">
+                            <a href="" class="header-contacts--mess">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_327)">
+                                        <path
+                                            d="M15 0C6.71601 0 0 6.7157 0 15C0 23.2843 6.71601 30 15 30C23.284 30 30 23.2843 30 15C30 6.7157 23.284 0 15 0ZM22.6088 16.6223C23.3079 17.3052 24.0476 17.9478 24.6752 18.7013C24.9532 19.0346 25.2153 19.3792 25.4148 19.7669C25.6996 20.3196 25.4425 20.9257 24.9477 20.9586L21.8747 20.958C21.081 21.0236 20.4494 20.7035 19.9169 20.1609C19.4919 19.7285 19.0975 19.2666 18.6881 18.8194C18.5208 18.6359 18.3447 18.4631 18.1347 18.3272C17.7158 18.0546 17.3518 18.1381 17.1118 18.5758C16.8672 19.0211 16.8114 19.5146 16.788 20.0102C16.7546 20.7348 16.5361 20.9242 15.809 20.9583C14.2554 21.031 12.7814 20.7953 11.4114 20.0121C10.2028 19.3212 9.26731 18.3462 8.45217 17.2423C6.86486 15.0902 5.64921 12.7283 4.55693 10.2985C4.3111 9.7513 4.49095 9.45852 5.09463 9.44716C6.0976 9.42783 7.10056 9.43028 8.10353 9.44624C8.51171 9.45268 8.78179 9.68624 8.93862 10.0714C9.48061 11.4049 10.1451 12.6737 10.9777 13.8503C11.1996 14.1637 11.4261 14.4761 11.7486 14.6974C12.1047 14.9417 12.376 14.861 12.5438 14.4635C12.6513 14.2109 12.6976 13.9409 12.7209 13.6702C12.8007 12.743 12.8102 11.8162 12.6721 10.8927C12.5862 10.3148 12.2612 9.94158 11.6851 9.83233C11.3917 9.77678 11.4347 9.66813 11.5774 9.50056C11.8251 9.21084 12.0571 9.03161 12.5208 9.03161L15.9928 9.031C16.5401 9.13841 16.6628 9.38394 16.7371 9.93514L16.7402 13.7936C16.7337 14.0069 16.8473 14.6391 17.2303 14.7787C17.5372 14.88 17.7397 14.6339 17.9233 14.4396C18.7559 13.556 19.3492 12.5131 19.8804 11.4338C20.1149 10.9577 20.3171 10.4652 20.5136 9.97166C20.6596 9.60675 20.8868 9.42721 21.2986 9.43335L24.642 9.43734C24.7406 9.43734 24.8406 9.43826 24.9382 9.45514C25.5017 9.55151 25.6561 9.79396 25.4817 10.3436C25.2074 11.2073 24.6743 11.9266 24.1531 12.6479C23.5946 13.4201 22.9989 14.1652 22.4458 14.9408C21.9376 15.6497 21.9778 16.0066 22.6088 16.6223Z"
+                                            fill="#083939" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_327">
+                                            <rect width="30" height="30" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </a>
+                            <a href="" class="header-contacts--mess">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 0C23.2846 0 30 6.71544 30 15C30 23.2846 23.2846 30 15 30C6.71544 30 0 23.2846 0 15C0 6.71544 6.71544 0 15 0ZM20.1743 21.1141C20.4502 20.2676 21.7428 11.8311 21.9026 10.1687C21.9509 9.66522 21.7917 9.33065 21.48 9.1813C21.103 9 20.5448 9.09065 19.8972 9.32413C19.0089 9.64435 7.65326 14.4659 6.99717 14.745C6.375 15.0091 5.78674 15.2974 5.78674 15.7148C5.78674 16.0083 5.96087 16.1733 6.44087 16.3448C6.94044 16.5228 8.19848 16.9043 8.94131 17.1091C9.65674 17.3067 10.4713 17.1352 10.9278 16.8515C11.4117 16.5509 16.9963 12.8139 17.3974 12.4865C17.7978 12.1591 18.1174 12.5785 17.79 12.9065C17.4626 13.2339 13.6291 16.9546 13.1237 17.4698C12.51 18.0952 12.9457 18.7435 13.3572 19.003C13.8274 19.2991 17.2089 21.5674 17.7183 21.9313C18.2276 22.2952 18.7441 22.4602 19.217 22.4602C19.6898 22.4602 19.9389 21.8374 20.1743 21.1141Z"
+                                        fill="#073030" />
+                                </svg>
+                            </a>
+                            <a href="" class="header-contacts--mess">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 0C6.72921 0 9.67976e-05 6.72911 9.67976e-05 15C9.67976e-05 17.5826 0.667268 20.1221 1.93248 22.363L0.0242271 29.1716C-0.0383814 29.3953 0.0222707 29.6353 0.184009 29.8016C0.308574 29.9301 0.478139 29.9999 0.652269 29.9999C0.704442 29.9999 0.757268 29.9934 0.80879 29.981L7.91485 28.2208C10.0846 29.3856 12.5283 29.9999 15 29.9999C23.2709 29.9999 30 23.2708 30 15C30 6.72911 23.2709 0 15 0ZM22.5457 20.293C22.2248 21.1812 20.6857 21.9919 19.9461 22.1008C19.2822 22.198 18.4422 22.2397 17.52 21.9501C16.9611 21.7741 16.2437 21.5406 15.3248 21.1486C11.462 19.5012 8.93942 15.6606 8.74637 15.4069C8.55398 15.1532 7.17399 13.3454 7.17399 11.4743C7.17399 9.60323 8.16855 8.68301 8.52203 8.30215C8.8755 7.92128 9.29224 7.82606 9.5492 7.82606C9.80615 7.82606 10.0625 7.82932 10.2875 7.83976C10.5242 7.8515 10.8418 7.75041 11.1542 8.49258C11.4751 9.25432 12.2453 11.1254 12.3405 11.3165C12.437 11.5069 12.5009 11.7293 12.3731 11.983C12.2453 12.2367 12.1814 12.3952 11.9883 12.6176C11.7953 12.84 11.584 13.1132 11.4105 13.2841C11.2175 13.4739 11.0172 13.6793 11.2416 14.0602C11.4659 14.441 12.2388 15.686 13.384 16.6943C14.8546 17.9895 16.0957 18.3912 16.4805 18.5817C16.8653 18.7721 17.0903 18.7402 17.3146 18.4865C17.539 18.2321 18.2772 17.3758 18.5335 16.9956C18.7898 16.6154 19.0468 16.678 19.4003 16.8052C19.7537 16.9317 21.647 17.8512 22.0318 18.0417C22.4165 18.2321 22.6735 18.3273 22.77 18.4858C22.8665 18.6436 22.8665 19.4054 22.5457 20.293Z"
+                                        fill="#073030" />
+                                </svg>
+                            </a>
+                            <a href="tel:+74951590690" class="header-contacts--tel">+7 495 159-06-90</a>
+                            <button class="call-button btn" data-modal-target="#modal">Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="burger-menu">
+                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="top-bar" d="M0 1L17 1" stroke="black" />
+                        <path class="middle-bar" d="M0 7L17 7" stroke="black" />
+                        <path class="bottom-bar" d="M0 13L17 13" stroke="black" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="container">
+                <nav class="navigation">
+                    <ul class="navigation__menu">
+                        <li>
+                            <div class="navigation__menu--title">
+                                <a href="/catalog/projects/">Проекты</a>
+                                <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 1L7 6L12 1H2Z" fill="white" stroke="white" />
+                                </svg>
+                            </div>
+                            <div class="sub-menu--wrapper">
+                                <div class="sub-menu--wrapper--double">
+                                    <div class="sub-menu">
+                                        <div class="sub-menu__title">
+                                            <span>Материал</span>
+                                            <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 1L7 6L12 1L2 1Z" fill="#083939" stroke="#083939" />
+                                            </svg>
+                                        </div>
+                                        <ul>
+                                            <li><a href="/catalog/projects/filter/constructiontech-is-stonehouses/">Каменные
+                                                    дома</a></li>
+                                            <li><a href="/catalog/projects/filter/constructiontech-is-treehouses/">Деревянные
+                                                    дома</a></li>
+                                            <li><a href="/catalog/projects/filter/constructiontech-is-combinedhouses/">Комбинированные
+                                                    дома</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu">
+                                        <div class="sub-menu__title">
+                                            <span>Гараж</span>
+                                            <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 1L7 6L12 1L2 1Z" fill="#083939" stroke="#083939" />
+                                            </svg>
+                                        </div>
+                                        <ul>
+                                            <li><a href="/catalog/projects/filter/garage-is-yes/">С гаражом</a></li>
+                                            <li><a href="/catalog/projects/filter/garage-is-no/">Без гаража</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sub-menu">
+                                    <div class="sub-menu__title">
+                                        <span>Этажность</span>
+                                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 1L7 6L12 1L2 1Z" fill="#083939" stroke="#083939" />
+                                        </svg>
+                                    </div>
+                                    <ul>
+                                        <li><a href="/catalog/projects/filter/stages-is-1-floor/">Одноэтажные</a></li>
+                                        <li><a href="/catalog/projects/filter/stages-is-2-floor/">Двухэтажные</a></li>
+                                        <li><a href="/catalog/projects/filter/stages-is-3-floor/">Трехэтажные</a></li>
+                                        <li><a href="/catalog/projects/filter/add_stages-is-mansard/">С мансардой</a>
+                                        </li>
+                                        <li><a href="/catalog/projects/filter/add_stages-is-ground_floor/">С цокольным
+                                                этажом</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-menu">
+                                    <div class="sub-menu__title">
+                                        <span>Стиль</span>
+                                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 1L7 6L12 1L2 1Z" fill="#083939" stroke="#083939" />
+                                        </svg>
+                                    </div>
+                                    <ul>
+                                        <li><a href="/catalog/projects/filter/style-is-english/">Английский</a></li>
+                                        <li><a href="/catalog/projects/filter/style-is-modern/">Современный</a></li>
+                                        <li><a href="/catalog/projects/filter/style-is-shale/">Шале</a></li>
+                                        <li><a href="/catalog/projects/filter/style-is-classic/">Классический</a></li>
+                                        <li><a href="/catalog/projects/filter/style-is-rait/">Райт</a></li>
+                                        <li><a href="/catalog/projects/filter/style-is-hitech/">Хай Тек</a></li>
+                                        <li><a href="/catalog/projects/filter/style-is-barnhause/">Барнхаус</a></li>
+                                        <li><a href="/catalog/projects/filter/style-is-scandinavian/">Скандинавский</a>
+                                        </li>
+                                        <li><a href="/catalog/projects/filter/style-is-ardeko/">Ар-деко</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-menu">
+                                    <div class="sub-menu__title">
+                                        <span>Архитектурные решения</span>
+                                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 1L7 6L12 1L2 1Z" fill="#083939" stroke="#083939" />
+                                        </svg>
+                                    </div>
+                                    <ul>
+                                        <li><a
+                                                href="/catalog/projects/filter/architectural_solutions-is-balkon/">Балкон</a>
+                                        </li>
+                                        <li><a
+                                                href="/catalog/projects/filter/architectural_solutions-is-terrasa/">Терраса</a>
+                                        </li>
+                                        <li><a
+                                                href="/catalog/projects/filter/architectural_solutions-is-kamin/">Камин</a>
+                                        </li>
+                                        <li><a
+                                                href="/catalog/projects/filter/architectural_solutions-is-ekspluatiruemaya-krovlya/">Эксплуатируемая
+                                                кровля</a></li>
+                                        <li><a href="/catalog/projects/filter/architectural_solutions-is-vtoroj-svet/">Второй
+                                                свет</a></li>
+                                        <li><a
+                                                href="/catalog/projects/filter/architectural_solutions-is-panoramnoe-osteklenie/">Панорамное
+                                                остекление</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-menu">
+                                    <div class="sub-menu__title">
+                                        <span>Доп. помещения</span>
+                                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 1L7 6L12 1L2 1Z" fill="#083939" stroke="#083939" />
+                                        </svg>
+                                    </div>
+                                    <ul>
+                                        <li><a href="/catalog/projects/filter/additional_rooms-is-zona-barbekyu/">Зона
+                                                барбекю</a></li>
+                                        <li><a
+                                                href="/catalog/projects/filter/additional_rooms-is-sauna-banya-hammam/">Сауна/баня/хаммам</a>
+                                        </li>
+                                        <li><a href="/catalog/projects/filter/add_stages-is-mansard/">Мансарда</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="navigation__menu--title">
+                                <a href="/services/">Услуги</a>
+                                <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 1L7 6L12 1H2Z" fill="white" stroke="white" />
+                                </svg>
+                            </div>
+                            <div class="sub-menu--wrapper">
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="/services/proektirovanie/">Проектирование</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/stroitelstvo/">Строительство</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/inzhenernye-kommunikatsii/">Инженерные коммуникации</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/land-design/">Ландшафтный дизайн</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/dizayn/">Дизайн</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/exterior/">Внешняя отделка</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/finansovaya-podderzhka-stroitelstva/">Финансовая
+                                                поддержка строительства</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="navigation__menu--title">
+                                <a href="/gallery/houses/">Галерея</a>
+                                <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 1L7 6L12 1H2Z" fill="white" stroke="white" />
+                                </svg>
+                            </div>
+                            <div class="sub-menu--wrapper">
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="/gallery/houses/">Построенные дома</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gallery/video/">Видео</a>
+                                        </li>
+                                        <li>
+                                            <a href="/gallery/3d/">3D-Туры</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="navigation__menu--title">
+                                <a href="/about/">Компания</a>
+                                <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 1L7 6L12 1H2Z" fill="white" stroke="white" />
+                                </svg>
+                            </div>
+                            <div class="sub-menu--wrapper">
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="/about/news/">Новости</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about/staff/">Сотрудники</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about/our-partners/">Партнеры</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about/reviews/">Отзывы</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about/blog/">Блог</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="navigation__menu--title">
+                                <a href="/contacts/">Контакты</a>
+                                <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 1L7 6L12 1H2Z" fill="white" stroke="white" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navigation-search">
+                        <button class="navigation-search--button">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9837 0C7.5551 0 3.96735 3.58776 3.96735 8.01633C3.96735 9.93061 4.63673 11.6857 5.7551 13.0653L0.244898 18.5755C-0.0816327 18.902 -0.0816327 19.4286 0.244898 19.7551C0.571429 20.0816 1.09796 20.0816 1.42449 19.7551L6.93469 14.2449C8.31429 15.3633 10.0694 16.0327 11.9837 16.0327C16.4122 16.0327 20 12.4449 20 8.01633C20 3.58776 16.4082 0 11.9837 0ZM11.9837 14.3673C8.47755 14.3673 5.63265 11.5224 5.63265 8.01633C5.63265 4.5102 8.47755 1.66531 11.9837 1.66531C15.4898 1.66531 18.3347 4.5102 18.3347 8.01633C18.3347 11.5224 15.4898 14.3673 11.9837 14.3673Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="search-input-block">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9837 0C7.5551 0 3.96735 3.58776 3.96735 8.01633C3.96735 9.93061 4.63674 11.6857 5.7551 13.0653L0.244898 18.5755C-0.0816327 18.902 -0.0816327 19.4286 0.244898 19.7551C0.571429 20.0816 1.09796 20.0816 1.42449 19.7551L6.93469 14.2449C8.31429 15.3633 10.0694 16.0327 11.9837 16.0327C16.4122 16.0327 20 12.4449 20 8.01633C20 3.58776 16.4082 0 11.9837 0ZM11.9837 14.3673C8.47755 14.3673 5.63265 11.5225 5.63265 8.01633C5.63265 4.51021 8.47755 1.66531 11.9837 1.66531C15.4898 1.66531 18.3347 4.51021 18.3347 8.01633C18.3347 11.5225 15.4898 14.3673 11.9837 14.3673Z"
+                                    fill="#083939" />
+                            </svg>
+
+                            <input type="text" id="search-input" placeholder="Поиск...">
+                        </div>
+                    </div>
+                    <div class="navigation__menu--mobile">
+                        <button class="call-button btn" data-modal-target="#modal">Заказать звонок</button>
+                        <div class="navigation__menu--mobile--contacts">
+                            <a href="tel:+74951590690" class="header-contacts--tel">+7 495 159-06-90</a>
+                            <a href="" class="header-contacts--mess">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_327)">
+                                        <path
+                                            d="M15 0C6.71601 0 0 6.7157 0 15C0 23.2843 6.71601 30 15 30C23.284 30 30 23.2843 30 15C30 6.7157 23.284 0 15 0ZM22.6088 16.6223C23.3079 17.3052 24.0476 17.9478 24.6752 18.7013C24.9532 19.0346 25.2153 19.3792 25.4148 19.7669C25.6996 20.3196 25.4425 20.9257 24.9477 20.9586L21.8747 20.958C21.081 21.0236 20.4494 20.7035 19.9169 20.1609C19.4919 19.7285 19.0975 19.2666 18.6881 18.8194C18.5208 18.6359 18.3447 18.4631 18.1347 18.3272C17.7158 18.0546 17.3518 18.1381 17.1118 18.5758C16.8672 19.0211 16.8114 19.5146 16.788 20.0102C16.7546 20.7348 16.5361 20.9242 15.809 20.9583C14.2554 21.031 12.7814 20.7953 11.4114 20.0121C10.2028 19.3212 9.26731 18.3462 8.45217 17.2423C6.86486 15.0902 5.64921 12.7283 4.55693 10.2985C4.3111 9.7513 4.49095 9.45852 5.09463 9.44716C6.0976 9.42783 7.10056 9.43028 8.10353 9.44624C8.51171 9.45268 8.78179 9.68624 8.93862 10.0714C9.48061 11.4049 10.1451 12.6737 10.9777 13.8503C11.1996 14.1637 11.4261 14.4761 11.7486 14.6974C12.1047 14.9417 12.376 14.861 12.5438 14.4635C12.6513 14.2109 12.6976 13.9409 12.7209 13.6702C12.8007 12.743 12.8102 11.8162 12.6721 10.8927C12.5862 10.3148 12.2612 9.94158 11.6851 9.83233C11.3917 9.77678 11.4347 9.66813 11.5774 9.50056C11.8251 9.21084 12.0571 9.03161 12.5208 9.03161L15.9928 9.031C16.5401 9.13841 16.6628 9.38394 16.7371 9.93514L16.7402 13.7936C16.7337 14.0069 16.8473 14.6391 17.2303 14.7787C17.5372 14.88 17.7397 14.6339 17.9233 14.4396C18.7559 13.556 19.3492 12.5131 19.8804 11.4338C20.1149 10.9577 20.3171 10.4652 20.5136 9.97166C20.6596 9.60675 20.8868 9.42721 21.2986 9.43335L24.642 9.43734C24.7406 9.43734 24.8406 9.43826 24.9382 9.45514C25.5017 9.55151 25.6561 9.79396 25.4817 10.3436C25.2074 11.2073 24.6743 11.9266 24.1531 12.6479C23.5946 13.4201 22.9989 14.1652 22.4458 14.9408C21.9376 15.6497 21.9778 16.0066 22.6088 16.6223Z"
+                                            fill="#083939" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_327">
+                                            <rect width="30" height="30" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </a>
+                            <a href="" class="header-contacts--mess">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 0C23.2846 0 30 6.71544 30 15C30 23.2846 23.2846 30 15 30C6.71544 30 0 23.2846 0 15C0 6.71544 6.71544 0 15 0ZM20.1743 21.1141C20.4502 20.2676 21.7428 11.8311 21.9026 10.1687C21.9509 9.66522 21.7917 9.33065 21.48 9.1813C21.103 9 20.5448 9.09065 19.8972 9.32413C19.0089 9.64435 7.65326 14.4659 6.99717 14.745C6.375 15.0091 5.78674 15.2974 5.78674 15.7148C5.78674 16.0083 5.96087 16.1733 6.44087 16.3448C6.94044 16.5228 8.19848 16.9043 8.94131 17.1091C9.65674 17.3067 10.4713 17.1352 10.9278 16.8515C11.4117 16.5509 16.9963 12.8139 17.3974 12.4865C17.7978 12.1591 18.1174 12.5785 17.79 12.9065C17.4626 13.2339 13.6291 16.9546 13.1237 17.4698C12.51 18.0952 12.9457 18.7435 13.3572 19.003C13.8274 19.2991 17.2089 21.5674 17.7183 21.9313C18.2276 22.2952 18.7441 22.4602 19.217 22.4602C19.6898 22.4602 19.9389 21.8374 20.1743 21.1141Z"
+                                        fill="#073030" />
+                                </svg>
+                            </a>
+                            <a href="" class="header-contacts--mess">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 0C6.72921 0 9.67976e-05 6.72911 9.67976e-05 15C9.67976e-05 17.5826 0.667268 20.1221 1.93248 22.363L0.0242271 29.1716C-0.0383814 29.3953 0.0222707 29.6353 0.184009 29.8016C0.308574 29.9301 0.478139 29.9999 0.652269 29.9999C0.704442 29.9999 0.757268 29.9934 0.80879 29.981L7.91485 28.2208C10.0846 29.3856 12.5283 29.9999 15 29.9999C23.2709 29.9999 30 23.2708 30 15C30 6.72911 23.2709 0 15 0ZM22.5457 20.293C22.2248 21.1812 20.6857 21.9919 19.9461 22.1008C19.2822 22.198 18.4422 22.2397 17.52 21.9501C16.9611 21.7741 16.2437 21.5406 15.3248 21.1486C11.462 19.5012 8.93942 15.6606 8.74637 15.4069C8.55398 15.1532 7.17399 13.3454 7.17399 11.4743C7.17399 9.60323 8.16855 8.68301 8.52203 8.30215C8.8755 7.92128 9.29224 7.82606 9.5492 7.82606C9.80615 7.82606 10.0625 7.82932 10.2875 7.83976C10.5242 7.8515 10.8418 7.75041 11.1542 8.49258C11.4751 9.25432 12.2453 11.1254 12.3405 11.3165C12.437 11.5069 12.5009 11.7293 12.3731 11.983C12.2453 12.2367 12.1814 12.3952 11.9883 12.6176C11.7953 12.84 11.584 13.1132 11.4105 13.2841C11.2175 13.4739 11.0172 13.6793 11.2416 14.0602C11.4659 14.441 12.2388 15.686 13.384 16.6943C14.8546 17.9895 16.0957 18.3912 16.4805 18.5817C16.8653 18.7721 17.0903 18.7402 17.3146 18.4865C17.539 18.2321 18.2772 17.3758 18.5335 16.9956C18.7898 16.6154 19.0468 16.678 19.4003 16.8052C19.7537 16.9317 21.647 17.8512 22.0318 18.0417C22.4165 18.2321 22.6735 18.3273 22.77 18.4858C22.8665 18.6436 22.8665 19.4054 22.5457 20.293Z"
+                                        fill="#073030" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+
+
+        <section class="main-engineering">
+            <div class="main-engineering--top">
+                <img src="./img/eng-main-l.jpg" alt=""><img src="./img/eng-main-r.png" alt="">
+            </div>
+
+            <div class="main-engineering-container">
+                <div class="main-engineering--left">
+                    <h1 class="h2-title "><span>Инженерные системы</span> <span>под ключ</span></h1>
+                    <p>Индивидуальное отопление, водоснабжение, электропроводка под ключ</p>
+                    <button class="btn">Выбрать услугу</button>
+                </div>
+                <div class="main-engineering--right">
+                    <ul class="main-engineering--list">
+                        <li>
+                            <span>100%</span>
+                            <p>Гарантия качества: контролируем <br>работу на всех этапах проекта
+                            </p>
+                        </li>
+                        <li>
+                            <span>500+</span>
+                            <p>Реализованных объектов для <br>частных домов, квартир, офисов</p>
+                        </li>
+                        <li>
+                            <span>24/7</span>
+                            <p>Готовы отвечать на<br> вопросы, когда удобно вам</p>
+                        </li>
+                    </ul>
+                    <img src="./img/house-backgr.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="uslugi-enginering">
+            <div class="container">
+                <div class="uslugi-enginering--top">
+                    <h2 class="h2-title h2-background"> <span>Услуги</span></h2>
+                    <p>Выполним проектные, монтажные и пусконаладочные работы по инженерным системам<br> и коммуникациям
+                        в
+                        частных домах в Москве и Московской области.</p>
+                </div>
+                <div class="uslugi-enginering--container">
+                    <div class="uslugi-enginering--item">
+                        <img src="./img/us-eng-1.jpg" alt="">
+                        <a href="" class="uslugi-enginering--item-text">
+                            <h3>Отопление</h3>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.831737 16.8317C0.186523 17.477 0.186523 18.5231 0.831737 19.1683C1.47695 19.8135 2.52305 19.8135 3.16826 19.1683L0.831737 16.8317ZM19.6522 2C19.6522 1.08753 18.9125 0.347826 18 0.347826H3.13044C2.21796 0.347826 1.47826 1.08753 1.47826 2C1.47826 2.91247 2.21796 3.65217 3.13044 3.65217H16.3478V16.8696C16.3478 17.782 17.0875 18.5217 18 18.5217C18.9125 18.5217 19.6522 17.782 19.6522 16.8696V2ZM3.16826 19.1683L19.1683 3.16826L16.8317 0.831737L0.831737 16.8317L3.16826 19.1683Z"
+                                    fill="#083939" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="uslugi-enginering--item">
+                        <img src="./img/us-eng-2.jpg" alt="">
+                        <a href="" class="uslugi-enginering--item-text">
+                            <h3>Водоснабжение</h3>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.831737 16.8317C0.186523 17.477 0.186523 18.5231 0.831737 19.1683C1.47695 19.8135 2.52305 19.8135 3.16826 19.1683L0.831737 16.8317ZM19.6522 2C19.6522 1.08753 18.9125 0.347826 18 0.347826H3.13044C2.21796 0.347826 1.47826 1.08753 1.47826 2C1.47826 2.91247 2.21796 3.65217 3.13044 3.65217H16.3478V16.8696C16.3478 17.782 17.0875 18.5217 18 18.5217C18.9125 18.5217 19.6522 17.782 19.6522 16.8696V2ZM3.16826 19.1683L19.1683 3.16826L16.8317 0.831737L0.831737 16.8317L3.16826 19.1683Z"
+                                    fill="#083939" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="uslugi-enginering--item">
+                        <img src="./img/us-eng-3.jpg" alt="">
+                        <a href="" class="uslugi-enginering--item-text">
+                            <h3>Канализация</h3>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.831737 16.8317C0.186523 17.477 0.186523 18.5231 0.831737 19.1683C1.47695 19.8135 2.52305 19.8135 3.16826 19.1683L0.831737 16.8317ZM19.6522 2C19.6522 1.08753 18.9125 0.347826 18 0.347826H3.13044C2.21796 0.347826 1.47826 1.08753 1.47826 2C1.47826 2.91247 2.21796 3.65217 3.13044 3.65217H16.3478V16.8696C16.3478 17.782 17.0875 18.5217 18 18.5217C18.9125 18.5217 19.6522 17.782 19.6522 16.8696V2ZM3.16826 19.1683L19.1683 3.16826L16.8317 0.831737L0.831737 16.8317L3.16826 19.1683Z"
+                                    fill="#083939" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="uslugi-enginering--item">
+                        <img src=" ./img/us-eng-4.jpg" alt="">
+                        <a href="" class="uslugi-enginering--item-text">
+                            <h3>Электроснабжение</h3>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.831737 16.8317C0.186523 17.477 0.186523 18.5231 0.831737 19.1683C1.47695 19.8135 2.52305 19.8135 3.16826 19.1683L0.831737 16.8317ZM19.6522 2C19.6522 1.08753 18.9125 0.347826 18 0.347826H3.13044C2.21796 0.347826 1.47826 1.08753 1.47826 2C1.47826 2.91247 2.21796 3.65217 3.13044 3.65217H16.3478V16.8696C16.3478 17.782 17.0875 18.5217 18 18.5217C18.9125 18.5217 19.6522 17.782 19.6522 16.8696V2ZM3.16826 19.1683L19.1683 3.16826L16.8317 0.831737L0.831737 16.8317L3.16826 19.1683Z"
+                                    fill="#083939" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="uslugi-enginering--item">
+                        <img src=" ./img/us-eng-5.jpg" alt="">
+                        <a href="" class="uslugi-enginering--item-text">
+                            <h3>Вентиляция</h3>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.831737 16.8317C0.186523 17.477 0.186523 18.5231 0.831737 19.1683C1.47695 19.8135 2.52305 19.8135 3.16826 19.1683L0.831737 16.8317ZM19.6522 2C19.6522 1.08753 18.9125 0.347826 18 0.347826H3.13044C2.21796 0.347826 1.47826 1.08753 1.47826 2C1.47826 2.91247 2.21796 3.65217 3.13044 3.65217H16.3478V16.8696C16.3478 17.782 17.0875 18.5217 18 18.5217C18.9125 18.5217 19.6522 17.782 19.6522 16.8696V2ZM3.16826 19.1683L19.1683 3.16826L16.8317 0.831737L0.831737 16.8317L3.16826 19.1683Z"
+                                    fill="#083939" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="uslugi-enginering--item">
+                        <img src=" ./img/us-eng-6.jpg" alt="">
+                        <a href="" class="uslugi-enginering--item-text">
+                            <h3>Кондиционирование</h3>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.831737 16.8317C0.186523 17.477 0.186523 18.5231 0.831737 19.1683C1.47695 19.8135 2.52305 19.8135 3.16826 19.1683L0.831737 16.8317ZM19.6522 2C19.6522 1.08753 18.9125 0.347826 18 0.347826H3.13044C2.21796 0.347826 1.47826 1.08753 1.47826 2C1.47826 2.91247 2.21796 3.65217 3.13044 3.65217H16.3478V16.8696C16.3478 17.782 17.0875 18.5217 18 18.5217C18.9125 18.5217 19.6522 17.782 19.6522 16.8696V2ZM3.16826 19.1683L19.1683 3.16826L16.8317 0.831737L0.831737 16.8317L3.16826 19.1683Z"
+                                    fill="#083939" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="max-enginering">
+            <div class="container">
+                <h2 class="h2-title h2-background"><span>Максимум</span>выгоды</h2>
+                <div class="max-enginering--content">
+                    <div class="max-enginering--content--item">
+                        <svg width="40.000000" height="44.753418" viewBox="0 0 40 44.7534" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path id="Vector"
+                                d="M6.47 7.67C6.47 6.1 6.95 4.57 7.85 3.28C8.76 1.99 10.04 1.01 11.51 0.48C12.99 -0.05 14.6 -0.12 16.12 0.29C17.64 0.71 18.99 1.58 20 2.79C21.27 1.23 23.12 0.24 25.12 0.04C27.13 -0.17 29.13 0.42 30.7 1.69C32.27 2.95 33.28 4.78 33.5 6.78C33.73 8.79 33.15 10.8 31.91 12.38L34.11 12.38C34.89 12.38 35.65 12.53 36.36 12.83C37.08 13.12 37.73 13.56 38.27 14.1C38.82 14.65 39.25 15.3 39.55 16.01C39.84 16.72 40 17.49 40 18.26L40 21.2C40 21.67 39.81 22.12 39.48 22.45C39.15 22.78 38.7 22.97 38.23 22.97L22.47 22.97C22.37 22.97 22.28 22.95 22.2 22.91C22.11 22.88 22.03 22.83 21.97 22.76C21.9 22.7 21.85 22.62 21.81 22.53C21.78 22.45 21.76 22.35 21.76 22.26L21.76 14.12C21.1 13.69 20.5 13.17 20 12.56C19.49 13.17 18.89 13.69 18.23 14.12L18.23 22.26C18.23 22.45 18.16 22.63 18.02 22.76C17.89 22.89 17.71 22.97 17.52 22.97L1.76 22.97C1.29 22.97 0.84 22.78 0.51 22.45C0.18 22.12 0 21.67 0 21.2L0 18.26C0 17.49 0.15 16.72 0.44 16.01C0.74 15.3 1.17 14.65 1.72 14.1C2.26 13.56 2.91 13.12 3.63 12.83C4.34 12.53 5.1 12.38 5.88 12.38L8.08 12.38C7.03 11.04 6.46 9.38 6.47 7.67ZM18.23 7.67C18.23 6.58 17.8 5.53 17.02 4.76C16.25 3.99 15.2 3.56 14.11 3.56C13.02 3.56 11.97 3.99 11.2 4.76C10.43 5.53 10 6.58 10 7.67C10 8.77 10.43 9.81 11.2 10.58C11.97 11.36 13.02 11.79 14.11 11.79C15.2 11.79 16.25 11.36 17.02 10.58C17.8 9.81 18.23 8.77 18.23 7.67ZM21.76 7.67C21.76 8.21 21.87 8.75 22.07 9.25C22.28 9.75 22.58 10.2 22.97 10.58C23.35 10.97 23.8 11.27 24.3 11.48C24.8 11.68 25.34 11.79 25.88 11.79C26.42 11.79 26.95 11.68 27.45 11.48C27.95 11.27 28.41 10.97 28.79 10.58C29.17 10.2 29.47 9.75 29.68 9.25C29.89 8.75 30 8.21 30 7.67C30 6.58 29.56 5.53 28.79 4.76C28.02 3.99 26.97 3.56 25.88 3.56C24.79 3.56 23.74 3.99 22.97 4.76C22.19 5.53 21.76 6.58 21.76 7.67Z"
+                                fill="#C13A39" fill-opacity="1.000000" fill-rule="evenodd" />
+                            <path id="Vector"
+                                d="M18.23 26.85C18.23 26.66 18.16 26.48 18.02 26.35C17.89 26.22 17.71 26.14 17.52 26.14L5.05 26.14C4.59 26.14 4.14 26.31 3.79 26.6C3.43 26.9 3.2 27.32 3.12 27.77C2.6 30.82 2.6 33.94 3.12 36.99L3.65 40.07C3.82 41.07 4.32 42 5.06 42.7C5.81 43.41 6.76 43.85 7.78 43.96L10.28 44.24C12.69 44.51 15.1 44.68 17.51 44.75C17.6 44.75 17.7 44.73 17.78 44.7C17.87 44.66 17.95 44.61 18.02 44.55C18.08 44.48 18.14 44.4 18.17 44.32C18.21 44.23 18.23 44.14 18.23 44.04L18.23 26.85ZM22.48 44.75C22.39 44.75 22.29 44.73 22.21 44.7C22.12 44.66 22.04 44.61 21.97 44.55C21.91 44.48 21.85 44.4 21.82 44.32C21.78 44.23 21.76 44.14 21.76 44.04L21.76 26.85C21.76 26.66 21.83 26.48 21.97 26.35C22.1 26.22 22.28 26.14 22.47 26.14L34.94 26.14C35.89 26.14 36.71 26.83 36.87 27.77C37.39 30.82 37.39 33.94 36.87 36.99L36.34 40.07C36.17 41.08 35.67 42 34.93 42.7C34.18 43.41 33.23 43.85 32.21 43.96L29.71 44.24C27.3 44.51 24.89 44.68 22.48 44.75Z"
+                                fill="#C13A39" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+
+                        <a class="max-enginering--content--item--link" href="">
+                            <span>Монтаж заземления в подарок!</span>
+                            <svg width="17.799774" height="18.311157" viewBox="0 0 17.7998 18.3112" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs />
+                                <path id="Vector 5"
+                                    d="M2.86 17.75L2.86 17.78C2.23 18.45 1.2 18.49 0.52 17.85C-0.15 17.22 -0.18 16.19 0.45 15.52L0.48 15.52L2.86 17.75ZM14.12 3.35L2.56 3.72C1.63 3.75 0.88 3.05 0.85 2.13C0.82 1.2 1.53 0.45 2.45 0.42L15.66 0C16.59 -0.03 17.34 0.67 17.37 1.59L17.79 14.8C17.82 15.73 17.12 16.48 16.2 16.51C15.27 16.54 14.52 15.84 14.49 14.91L14.12 3.35Z"
+                                    fill="#083939" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector 5"
+                                    d="M11.78 3.43L2.56 3.72C1.63 3.75 0.88 3.05 0.85 2.13C0.82 1.2 1.53 0.45 2.45 0.42L15.66 0C16.59 -0.03 17.34 0.67 17.37 1.59L17.79 14.8C17.82 15.73 17.12 16.48 16.2 16.51C15.27 16.54 14.52 15.84 14.49 14.91L14.19 5.69L2.86 17.78C2.23 18.45 1.2 18.49 0.52 17.85C-0.15 17.22 -0.18 16.19 0.45 15.52L11.78 3.43Z"
+                                    fill="#083939" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+                    <div class="max-enginering--content--item">
+                        <svg width="40.000000" height="44.753418" viewBox="0 0 40 44.7534" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path id="Vector"
+                                d="M6.47 7.67C6.47 6.1 6.95 4.57 7.85 3.28C8.76 1.99 10.04 1.01 11.51 0.48C12.99 -0.05 14.6 -0.12 16.12 0.29C17.64 0.71 18.99 1.58 20 2.79C21.27 1.23 23.12 0.24 25.12 0.04C27.13 -0.17 29.13 0.42 30.7 1.69C32.27 2.95 33.28 4.78 33.5 6.78C33.73 8.79 33.15 10.8 31.91 12.38L34.11 12.38C34.89 12.38 35.65 12.53 36.36 12.83C37.08 13.12 37.73 13.56 38.27 14.1C38.82 14.65 39.25 15.3 39.55 16.01C39.84 16.72 40 17.49 40 18.26L40 21.2C40 21.67 39.81 22.12 39.48 22.45C39.15 22.78 38.7 22.97 38.23 22.97L22.47 22.97C22.37 22.97 22.28 22.95 22.2 22.91C22.11 22.88 22.03 22.83 21.97 22.76C21.9 22.7 21.85 22.62 21.81 22.53C21.78 22.45 21.76 22.35 21.76 22.26L21.76 14.12C21.1 13.69 20.5 13.17 20 12.56C19.49 13.17 18.89 13.69 18.23 14.12L18.23 22.26C18.23 22.45 18.16 22.63 18.02 22.76C17.89 22.89 17.71 22.97 17.52 22.97L1.76 22.97C1.29 22.97 0.84 22.78 0.51 22.45C0.18 22.12 0 21.67 0 21.2L0 18.26C0 17.49 0.15 16.72 0.44 16.01C0.74 15.3 1.17 14.65 1.72 14.1C2.26 13.56 2.91 13.12 3.63 12.83C4.34 12.53 5.1 12.38 5.88 12.38L8.08 12.38C7.03 11.04 6.46 9.38 6.47 7.67ZM18.23 7.67C18.23 6.58 17.8 5.53 17.02 4.76C16.25 3.99 15.2 3.56 14.11 3.56C13.02 3.56 11.97 3.99 11.2 4.76C10.43 5.53 10 6.58 10 7.67C10 8.77 10.43 9.81 11.2 10.58C11.97 11.36 13.02 11.79 14.11 11.79C15.2 11.79 16.25 11.36 17.02 10.58C17.8 9.81 18.23 8.77 18.23 7.67ZM21.76 7.67C21.76 8.21 21.87 8.75 22.07 9.25C22.28 9.75 22.58 10.2 22.97 10.58C23.35 10.97 23.8 11.27 24.3 11.48C24.8 11.68 25.34 11.79 25.88 11.79C26.42 11.79 26.95 11.68 27.45 11.48C27.95 11.27 28.41 10.97 28.79 10.58C29.17 10.2 29.47 9.75 29.68 9.25C29.89 8.75 30 8.21 30 7.67C30 6.58 29.56 5.53 28.79 4.76C28.02 3.99 26.97 3.56 25.88 3.56C24.79 3.56 23.74 3.99 22.97 4.76C22.19 5.53 21.76 6.58 21.76 7.67Z"
+                                fill="#C13A39" fill-opacity="1.000000" fill-rule="evenodd" />
+                            <path id="Vector"
+                                d="M18.23 26.85C18.23 26.66 18.16 26.48 18.02 26.35C17.89 26.22 17.71 26.14 17.52 26.14L5.05 26.14C4.59 26.14 4.14 26.31 3.79 26.6C3.43 26.9 3.2 27.32 3.12 27.77C2.6 30.82 2.6 33.94 3.12 36.99L3.65 40.07C3.82 41.07 4.32 42 5.06 42.7C5.81 43.41 6.76 43.85 7.78 43.96L10.28 44.24C12.69 44.51 15.1 44.68 17.51 44.75C17.6 44.75 17.7 44.73 17.78 44.7C17.87 44.66 17.95 44.61 18.02 44.55C18.08 44.48 18.14 44.4 18.17 44.32C18.21 44.23 18.23 44.14 18.23 44.04L18.23 26.85ZM22.48 44.75C22.39 44.75 22.29 44.73 22.21 44.7C22.12 44.66 22.04 44.61 21.97 44.55C21.91 44.48 21.85 44.4 21.82 44.32C21.78 44.23 21.76 44.14 21.76 44.04L21.76 26.85C21.76 26.66 21.83 26.48 21.97 26.35C22.1 26.22 22.28 26.14 22.47 26.14L34.94 26.14C35.89 26.14 36.71 26.83 36.87 27.77C37.39 30.82 37.39 33.94 36.87 36.99L36.34 40.07C36.17 41.08 35.67 42 34.93 42.7C34.18 43.41 33.23 43.85 32.21 43.96L29.71 44.24C27.3 44.51 24.89 44.68 22.48 44.75Z"
+                                fill="#C13A39" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+
+                        <a class="max-enginering--content--item--link" href="">
+                            <span>Проект инженерных систем в подарок!</span>
+                            <svg width="17.799774" height="18.311157" viewBox="0 0 17.7998 18.3112" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs />
+                                <path id="Vector 5"
+                                    d="M2.86 17.75L2.86 17.78C2.23 18.45 1.2 18.49 0.52 17.85C-0.15 17.22 -0.18 16.19 0.45 15.52L0.48 15.52L2.86 17.75ZM14.12 3.35L2.56 3.72C1.63 3.75 0.88 3.05 0.85 2.13C0.82 1.2 1.53 0.45 2.45 0.42L15.66 0C16.59 -0.03 17.34 0.67 17.37 1.59L17.79 14.8C17.82 15.73 17.12 16.48 16.2 16.51C15.27 16.54 14.52 15.84 14.49 14.91L14.12 3.35Z"
+                                    fill="#083939" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector 5"
+                                    d="M11.78 3.43L2.56 3.72C1.63 3.75 0.88 3.05 0.85 2.13C0.82 1.2 1.53 0.45 2.45 0.42L15.66 0C16.59 -0.03 17.34 0.67 17.37 1.59L17.79 14.8C17.82 15.73 17.12 16.48 16.2 16.51C15.27 16.54 14.52 15.84 14.49 14.91L14.19 5.69L2.86 17.78C2.23 18.45 1.2 18.49 0.52 17.85C-0.15 17.22 -0.18 16.19 0.45 15.52L11.78 3.43Z"
+                                    fill="#083939" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+                    <div class="max-enginering--content--item">
+                        <svg width="40.000000" height="44.753418" viewBox="0 0 40 44.7534" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path id="Vector"
+                                d="M6.47 7.67C6.47 6.1 6.95 4.57 7.85 3.28C8.76 1.99 10.04 1.01 11.51 0.48C12.99 -0.05 14.6 -0.12 16.12 0.29C17.64 0.71 18.99 1.58 20 2.79C21.27 1.23 23.12 0.24 25.12 0.04C27.13 -0.17 29.13 0.42 30.7 1.69C32.27 2.95 33.28 4.78 33.5 6.78C33.73 8.79 33.15 10.8 31.91 12.38L34.11 12.38C34.89 12.38 35.65 12.53 36.36 12.83C37.08 13.12 37.73 13.56 38.27 14.1C38.82 14.65 39.25 15.3 39.55 16.01C39.84 16.72 40 17.49 40 18.26L40 21.2C40 21.67 39.81 22.12 39.48 22.45C39.15 22.78 38.7 22.97 38.23 22.97L22.47 22.97C22.37 22.97 22.28 22.95 22.2 22.91C22.11 22.88 22.03 22.83 21.97 22.76C21.9 22.7 21.85 22.62 21.81 22.53C21.78 22.45 21.76 22.35 21.76 22.26L21.76 14.12C21.1 13.69 20.5 13.17 20 12.56C19.49 13.17 18.89 13.69 18.23 14.12L18.23 22.26C18.23 22.45 18.16 22.63 18.02 22.76C17.89 22.89 17.71 22.97 17.52 22.97L1.76 22.97C1.29 22.97 0.84 22.78 0.51 22.45C0.18 22.12 0 21.67 0 21.2L0 18.26C0 17.49 0.15 16.72 0.44 16.01C0.74 15.3 1.17 14.65 1.72 14.1C2.26 13.56 2.91 13.12 3.63 12.83C4.34 12.53 5.1 12.38 5.88 12.38L8.08 12.38C7.03 11.04 6.46 9.38 6.47 7.67ZM18.23 7.67C18.23 6.58 17.8 5.53 17.02 4.76C16.25 3.99 15.2 3.56 14.11 3.56C13.02 3.56 11.97 3.99 11.2 4.76C10.43 5.53 10 6.58 10 7.67C10 8.77 10.43 9.81 11.2 10.58C11.97 11.36 13.02 11.79 14.11 11.79C15.2 11.79 16.25 11.36 17.02 10.58C17.8 9.81 18.23 8.77 18.23 7.67ZM21.76 7.67C21.76 8.21 21.87 8.75 22.07 9.25C22.28 9.75 22.58 10.2 22.97 10.58C23.35 10.97 23.8 11.27 24.3 11.48C24.8 11.68 25.34 11.79 25.88 11.79C26.42 11.79 26.95 11.68 27.45 11.48C27.95 11.27 28.41 10.97 28.79 10.58C29.17 10.2 29.47 9.75 29.68 9.25C29.89 8.75 30 8.21 30 7.67C30 6.58 29.56 5.53 28.79 4.76C28.02 3.99 26.97 3.56 25.88 3.56C24.79 3.56 23.74 3.99 22.97 4.76C22.19 5.53 21.76 6.58 21.76 7.67Z"
+                                fill="#C13A39" fill-opacity="1.000000" fill-rule="evenodd" />
+                            <path id="Vector"
+                                d="M18.23 26.85C18.23 26.66 18.16 26.48 18.02 26.35C17.89 26.22 17.71 26.14 17.52 26.14L5.05 26.14C4.59 26.14 4.14 26.31 3.79 26.6C3.43 26.9 3.2 27.32 3.12 27.77C2.6 30.82 2.6 33.94 3.12 36.99L3.65 40.07C3.82 41.07 4.32 42 5.06 42.7C5.81 43.41 6.76 43.85 7.78 43.96L10.28 44.24C12.69 44.51 15.1 44.68 17.51 44.75C17.6 44.75 17.7 44.73 17.78 44.7C17.87 44.66 17.95 44.61 18.02 44.55C18.08 44.48 18.14 44.4 18.17 44.32C18.21 44.23 18.23 44.14 18.23 44.04L18.23 26.85ZM22.48 44.75C22.39 44.75 22.29 44.73 22.21 44.7C22.12 44.66 22.04 44.61 21.97 44.55C21.91 44.48 21.85 44.4 21.82 44.32C21.78 44.23 21.76 44.14 21.76 44.04L21.76 26.85C21.76 26.66 21.83 26.48 21.97 26.35C22.1 26.22 22.28 26.14 22.47 26.14L34.94 26.14C35.89 26.14 36.71 26.83 36.87 27.77C37.39 30.82 37.39 33.94 36.87 36.99L36.34 40.07C36.17 41.08 35.67 42 34.93 42.7C34.18 43.41 33.23 43.85 32.21 43.96L29.71 44.24C27.3 44.51 24.89 44.68 22.48 44.75Z"
+                                fill="#C13A39" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+
+                        <a class="max-enginering--content--item--link" href="">
+                            <span>Котел или бойлер в подарок!</span>
+                            <svg width="17.799774" height="18.311157" viewBox="0 0 17.7998 18.3112" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs />
+                                <path id="Vector 5"
+                                    d="M2.86 17.75L2.86 17.78C2.23 18.45 1.2 18.49 0.52 17.85C-0.15 17.22 -0.18 16.19 0.45 15.52L0.48 15.52L2.86 17.75ZM14.12 3.35L2.56 3.72C1.63 3.75 0.88 3.05 0.85 2.13C0.82 1.2 1.53 0.45 2.45 0.42L15.66 0C16.59 -0.03 17.34 0.67 17.37 1.59L17.79 14.8C17.82 15.73 17.12 16.48 16.2 16.51C15.27 16.54 14.52 15.84 14.49 14.91L14.12 3.35Z"
+                                    fill="#083939" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path id="Vector 5"
+                                    d="M11.78 3.43L2.56 3.72C1.63 3.75 0.88 3.05 0.85 2.13C0.82 1.2 1.53 0.45 2.45 0.42L15.66 0C16.59 -0.03 17.34 0.67 17.37 1.59L17.79 14.8C17.82 15.73 17.12 16.48 16.2 16.51C15.27 16.54 14.52 15.84 14.49 14.91L14.19 5.69L2.86 17.78C2.23 18.45 1.2 18.49 0.52 17.85C-0.15 17.22 -0.18 16.19 0.45 15.52L11.78 3.43Z"
+                                    fill="#083939" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-pdk-enginering">
+            <div class="container">
+                <div class="section-pdk-enginering__top">
+                    <div class="section-pdk-enginering__left">
+                        <h2 class="h2-title h2-background">
+                            Инженерные системы в доме <span>«под ключ»</span>
+                        </h2>
+                        <p class="section-pdk-enginering__text">Компания «Rotenstein» предлагает профессиональный монтаж
+                            инженерных систем под ключ. Мы
+                            монтируем инженерные сети всех типов и любой сложности. Работы выполняют квалифицированные
+                            инженеры и специалисты с многолетним опытом. Особое внимание уделяется надежности и качеству
+                            оборудования и материалов. На все монтажные работы предоставляется гарантия 7 лет.</p>
+                    </div>
+                    <div class="section-pdk-enginering__right">
+                        <img src="./img/eng-img.jpg" alt="">
+                    </div>
+                </div>
+                <div class="section-pdk-enginering__bottom">
+                    <div class="section-pdk-enginering__bottom--item">
+                        <div class="section-pdk-enginering__bottom--top">
+                            <span>о1</span>
+                            <span>Уровень сервиса</span>
+                        </div>
+                        <div class="section-pdk-enginering__bottom--bottom">
+                            Мы берем все заботы на себя! Вы сможете контролировать все этапы онлайн!
+                        </div>
+                    </div>
+                    <div class="section-pdk-enginering__bottom--item">
+                        <div class="section-pdk-enginering__bottom--top">
+                            <span>о2</span>
+                            <span class="section-pdk-enginering__bottom--top--desc">Регулярные фотоотчеты</span>
+                            <span class="section-pdk-enginering__bottom--top--mobile">Фотоотчеты</span>
+                        </div>
+                        <div class="section-pdk-enginering__bottom--bottom">
+                            Предоставляем фотографии с каждого этапа произведения работ
+                        </div>
+                    </div>
+                    <div class="section-pdk-enginering__bottom--item">
+                        <div class="section-pdk-enginering__bottom--top">
+                            <span>о3</span>
+                            <span>прозрачные условия</span>
+                        </div>
+                        <div class="section-pdk-enginering__bottom--bottom">
+                            Никаких сюрпризов - строго соблюдаем все договоренности и условия договора
+                        </div>
+                    </div>
+                    <div class="section-pdk-enginering__bottom--item">
+                        <div class="section-pdk-enginering__bottom--top">
+                            <span>о4</span>
+                            <span>Высокая скорость</span>
+                        </div>
+                        <div class="section-pdk-enginering__bottom--bottom">
+                            Оперативно отвечаем на любые вопросы. Все работы производятся согласно регламентов и не
+                            изменятся после согласования.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="clients-enginering">
+            <div class="container">
+                <h2 class="h2-title h2-background"><span>Наши клиенты </span></h2>
+            </div>
+            <div class="clients-enginering__picture">
+                <img src="./img/eng-cl-1.png" alt="">
+                <img src="./img/eng-cl-2.png" alt="">
+                <img src="./img/eng-cl-3.png" alt="">
+                <img src="./img/eng-cl-4.png" alt="">
+                <img src="./img/eng-cl-5.png" alt="">
+                <img src="./img/eng-cl-6.png" alt="">
+                <img src="./img/eng-cl-7.png" alt="">
+                <img src="./img/eng-cl-8.png" alt="">
+                <img src="./img/eng-cl-9.png" alt="">
+                <img src="./img/eng-cl-1.png" alt="">
+                <img src="./img/eng-cl-2.png" alt="">
+                <img src="./img/eng-cl-3.png" alt="">
+                <img src="./img/eng-cl-4.png" alt="">
+                <img src="./img/eng-cl-5.png" alt="">
+                <img src="./img/eng-cl-6.png" alt="">
+                <img src="./img/eng-cl-7.png" alt="">
+                <img src="./img/eng-cl-8.png" alt="">
+                <img src="./img/eng-cl-9.png" alt="">
+            </div>
+        </section>
+
+        <section class="otzyvi-enginering">
+            <div class="container">
+                <h2 class="h2-title h2-background"><span>Нам доверяют</span></h2>
+                <div class="otzyvi-enginering__slider">
+                    <div class=" swiper">
+                        <div class="swiper-wrapper">
+                            <div class="otzyvi-enginering__slider--item swiper-slide">
+                                <div class="otzyvi-page__box--item">
+                                    <div class="otzyvi-page__box--item--top">
+                                        <img alt=""
+                                            data-src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg"
+                                            src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg">
+                                        <div class="otzyvi-page__box--item--right">
+                                            <span class="otzyvi-page__box--item--rating">
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <span class="otzyvi-page__box--item--name">Анна</span>
+                                        </div>
+                                    </div>
+                                    <div class="otzyvi-page__box--item--bottom">
+                                        <p>“В 2017 году мы закончили строительство замечательного дома, о котором
+                                            мечтали уже много лет. Изначально мне казалось, что самым сложным будет
+                                            определиться с материалом для строительства и продумать планировку. Работа с
+                                            архитектором заняла практически 6 месяцев, с тем условием, что обсуждение
+                                            проходило достаточно плотно. Получилась "конфетка".”</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="otzyvi-enginering__slider--item swiper-slide">
+                                <div class="otzyvi-page__box--item">
+                                    <div class="otzyvi-page__box--item--top">
+                                        <img alt=""
+                                            data-src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg"
+                                            src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg">
+                                        <div class="otzyvi-page__box--item--right">
+                                            <span class="otzyvi-page__box--item--rating">
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <span class="otzyvi-page__box--item--name">Александр Игоревич</span>
+                                        </div>
+                                    </div>
+                                    <div class="otzyvi-page__box--item--bottom">
+                                        <p>“Год назад, завершая строительство дома, стал искать варианты монтажа 
+                                            инженерных коммуникаций. Нужно было сделать отопление, водоснабжение
+                                            и электрику. Через знакомых нашел несколько готовых взяться за эти
+                                            работы компаний.”</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="otzyvi-enginering__slider--item swiper-slide">
+                                <div class="otzyvi-page__box--item">
+                                    <div class="otzyvi-page__box--item--top">
+                                        <img alt=""
+                                            data-src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg"
+                                            src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg">
+                                        <div class="otzyvi-page__box--item--right">
+                                            <span class="otzyvi-page__box--item--rating">
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <span class="otzyvi-page__box--item--name">Татьяна Дьякова</span>
+                                        </div>
+                                    </div>
+                                    <div class="otzyvi-page__box--item--bottom">
+                                        <p>“Профессионализм на высоте! Такого чистого воздуха в нашем доме никогда еще
+                                            не было. Система  вентиляции работает безупречно, а внешне выглядит вне
+                                            всяких похвал. Оборудование идеально вписалось в интерьер помещений.
+                                            Работает бесшумно, что было для нас одним из важных критериев, так как есть
+                                            маленькие дети. Установили быстро и аккуратно”</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="otzyvi-enginering__slider--item swiper-slide">
+                                <div class="otzyvi-page__box--item">
+                                    <div class="otzyvi-page__box--item--top">
+                                        <img alt=""
+                                            data-src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg"
+                                            src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg">
+                                        <div class="otzyvi-page__box--item--right">
+                                            <span class="otzyvi-page__box--item--rating">
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <span class="otzyvi-page__box--item--name">Антон Владимирович</span>
+                                        </div>
+                                    </div>
+                                    <div class="otzyvi-page__box--item--bottom">
+                                        <p>“Искал долго, отбирал по цене, отзывам, срокам. Вежливые и учтивые сотрудники
+                                            сразу мне понравились, после не долгих переговоров, менеджер и инженер
+                                            приехали на объект, все обсудили, договора прозрачные, сроки реальные. когда
+                                            коснулось проекта, учли почти все, а то что не учли, внесли правки сразу и
+                                            так как хотелось бы”</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="otzyvi-enginering__slider--item swiper-slide">
+                                <div class="otzyvi-page__box--item">
+                                    <div class="otzyvi-page__box--item--top">
+                                        <img alt=""
+                                            data-src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg"
+                                            src="https://rotenstein.ru/wp-content/uploads/2024/11/e54b4933b895ca2fbd80646c1155e47f-1-optimized.jpg">
+                                        <div class="otzyvi-page__box--item--right">
+                                            <span class="otzyvi-page__box--item--rating">
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                                <svg width="11.833344" height="11.093750" viewBox="0 0 11.8333 11.0938"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs />
+                                                    <path id="Vector"
+                                                        d="M2.26 11.09L3.22 6.99L0 4.23L4.26 3.86L5.91 0L7.57 3.86L11.83 4.23L8.6 6.99L9.57 11.09L5.91 8.91L2.26 11.09Z"
+                                                        fill="#F0C61F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                                </svg>
+                                            </span>
+                                            <span class="otzyvi-page__box--item--name">Михаил Пономаренко</span>
+                                        </div>
+                                    </div>
+                                    <div class="otzyvi-page__box--item--bottom">
+                                        <p>“Когда мне потребовались услуги специалиста по монтажу радиаторов в
+                                            загородном доме,  друзья посоветовали обратиться в Частный Дом. Даже не
+                                            думал, что установка батарей имеет столько нюансов. Результат меня полностью
+                                            удовлетворил, хотя стоимость услуг довольно высокая по сравнению с услугами
+                                            частных мастеров. Но мне требовался качественный монтаж, чтобы потом не
+                                            пришлось ничего переделывать”</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-red"></div>
+                    <div class="swiper-button-prev swiper-red"></div>
+                </div>
+                <a href="" class="btn">Читать все отзывы</a>
+            </div>
+        </section>
+
+        <section class="section-expertiza">
+            <div class="container">
+
+                <h2 class="h2-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+                <div class="section-expertiza__content section-expertiza__content--max">
+                    <div class="section-expertiza__left">
+                        <ol class="list-number-variants list-number-variants--plus">
+                            <li>
+                                <div class="accordion-top">
+                                    <span>Почему мы рекомендуем производить работы в комплексе?</span>
+                                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0177 23.04V0.64H13.0177V23.04H10.0177ZM0.297656 13.32V10.32H22.6977V13.32H0.297656Z"
+                                            fill="#083939" />
+                                    </svg>
+
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Все просто — инженерные коммуникации в своем названии несут понимание того, что
+                                        это набор различных систем, взаимосвязанных и взаимозависимых.
+
+                                    <ol>
+                                        <li> При проектировании: комплексный подход позволит подобрать решения
+                                            еще на бумаге, продумать все тонкости и максимально
+                                            оптимизировать все моменты — стоимость, удобство, надежность;
+                                        </li>
+
+                                        <li> При монтаже: избавит от возможных неприятных моментов, когда
+                                            различные исполнители могут повредить коммуникации,
+                                            смонтированные другой бригадой (причем иногда не случайно, чтобы
+                                            оправдать повышение смет). Поверьте, восстановление трубы теплого
+                                            пола, которую проткнули сверлом монтажники электропроводки, может
+                                            обойтись в довольно неприличную сумму, особенно если протечку
+                                            заметили не сразу. Таких случаев за нашу практику мы можем
+                                            насчитать несколько десятков;
+                                        </li>
+
+                                        <li> При эксплуатации: представьте, если через год-два приятный
+                                            новогодний вечер вдруг прервет потухший котел или освещение. Если
+                                            ремонт вам делали бригады или разные компании поэтапно, сто к
+                                            одному, что вы либо не дозвонитесь ни до кого, либо в трубке вам
+                                            ответят, что вина не их, но приехать можем после праздников и
+                                            придется оплатить выезд. В случае, если комплексно монтировала
+                                            одна приличная компания: принципиальная вероятность такого случая
+                                            (а он не выдуманный) сведена к минимуму. А если даже такое
+                                            случилось, телефон нашей аварийной бригады | личного менеджера
+                                            всегда доступны и вопрос решится максимально быстро.
+                                        </li>
+                                    </ol>
+
+                                    </p>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="accordion-top">
+                                    <span>На каком этапе лучше всего начать монтаж инженерии и почему?</span>
+                                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0177 23.04V0.64H13.0177V23.04H10.0177ZM0.297656 13.32V10.32H22.6977V13.32H0.297656Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Инженерные системы монтируются сразу после возведения теплого контура дома, до
+                                        начала любых отделочных работ. Это позволит проводить все работы скрыто, с
+                                        наименьшими затратами на подготовку, не боясь повредить какие-либо
+                                        смонтированные покрытия. По всем технологиям, инженерные системы правильно
+                                        монтировать — в первую очередь и желательно — комплексно. Некоторые коммуникации
+                                        даже могут быть заложены еще на стадии фундамента (например, при строительстве
+                                        утепленной шведской плиты— полностью закладываются теплые полы).Иногда, особенно
+                                        при строительстве рубленных деревянных домов, необходимо дать некоторое время на
+                                        его усадку (до года), и только потом начинать любой монтаж.
+                                    </p>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="accordion-top">
+                                    <span>От чего зависит итоговая стоимость?</span>
+                                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0177 23.04V0.64H13.0177V23.04H10.0177ZM0.297656 13.32V10.32H22.6977V13.32H0.297656Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>На стоимость влияет большое количество факторов - площадь и материал самого дома,
+                                        степень утепления, имеющийся источник энергии (газ, электричество, другое),
+                                        требуемая степень автоматизации системы отопления, количество точек
+                                        электричества, способ его прокладки, выбранный вид отделки и, конечно, ценовой
+                                        сегмент финишных отделочных материалов.
+                                        Мы всегда предлагаем клиентам оптимальный вариант и дополнительно несколько
+                                        вариантов оптимизации
+                                    </p>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="accordion-top">
+                                    <span>От чего зависит скорость монтажа и какой средний срок реализации
+                                        проекта?</span>
+                                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0177 23.04V0.64H13.0177V23.04H10.0177ZM0.297656 13.32V10.32H22.6977V13.32H0.297656Z"
+                                            fill="#083939" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>В среднем, на реализацию проектов площадью 200-300 метров мы закладываем от 2
+                                        месяцев (если речь только об инженерных системах) и до 8-10 месяцев (если
+                                        проводится полный ремонт по дизайн-проекту).
+                                    </p>
+
+                                </div>
+                            </li>
+
+                        </ol>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-line-green section-line-gray">
+            <div class="container">
+                <div class="section-expertiza__top">
+                    <p>Оставьте заявку и мы ответим на все<br> ваши вопросы</p>
+                    <button class="btn btn-white" data-modal-target="#modal" data-name-header="Пройти опрос"
+                        data-name-form="Форма пройти опрос">Оставить заявку</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="" alt="">
+                <div class="footer-mess">
+                    <a href="" class="footer-contacts--mess">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 0C23.2846 0 30 6.71544 30 15C30 23.2846 23.2846 30 15 30C6.71544 30 0 23.2846 0 15C0 6.71544 6.71544 0 15 0ZM20.1743 21.1141C20.4502 20.2676 21.7428 11.8311 21.9026 10.1687C21.9509 9.66522 21.7917 9.33065 21.48 9.1813C21.103 9 20.5448 9.09065 19.8972 9.32413C19.0089 9.64435 7.65326 14.4659 6.99717 14.745C6.375 15.0091 5.78674 15.2974 5.78674 15.7148C5.78674 16.0083 5.96087 16.1733 6.44087 16.3448C6.94044 16.5228 8.19848 16.9043 8.94131 17.1091C9.65674 17.3067 10.4713 17.1352 10.9278 16.8515C11.4117 16.5509 16.9963 12.8139 17.3974 12.4865C17.7978 12.1591 18.1174 12.5785 17.79 12.9065C17.4626 13.2339 13.6291 16.9546 13.1237 17.4698C12.51 18.0952 12.9457 18.7435 13.3572 19.003C13.8274 19.2991 17.2089 21.5674 17.7183 21.9313C18.2276 22.2952 18.7441 22.4602 19.217 22.4602C19.6898 22.4602 19.9389 21.8374 20.1743 21.1141Z"
+                                fill="#073030" />
+                        </svg>
+                    </a>
+                    <a href="" class="footer-contacts--mess">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 0C6.72921 0 9.67976e-05 6.72911 9.67976e-05 15C9.67976e-05 17.5826 0.667268 20.1221 1.93248 22.363L0.0242271 29.1716C-0.0383814 29.3953 0.0222707 29.6353 0.184009 29.8016C0.308574 29.9301 0.478139 29.9999 0.652269 29.9999C0.704442 29.9999 0.757268 29.9934 0.80879 29.981L7.91485 28.2208C10.0846 29.3856 12.5283 29.9999 15 29.9999C23.2709 29.9999 30 23.2708 30 15C30 6.72911 23.2709 0 15 0ZM22.5457 20.293C22.2248 21.1812 20.6857 21.9919 19.9461 22.1008C19.2822 22.198 18.4422 22.2397 17.52 21.9501C16.9611 21.7741 16.2437 21.5406 15.3248 21.1486C11.462 19.5012 8.93942 15.6606 8.74637 15.4069C8.55398 15.1532 7.17399 13.3454 7.17399 11.4743C7.17399 9.60323 8.16855 8.68301 8.52203 8.30215C8.8755 7.92128 9.29224 7.82606 9.5492 7.82606C9.80615 7.82606 10.0625 7.82932 10.2875 7.83976C10.5242 7.8515 10.8418 7.75041 11.1542 8.49258C11.4751 9.25432 12.2453 11.1254 12.3405 11.3165C12.437 11.5069 12.5009 11.7293 12.3731 11.983C12.2453 12.2367 12.1814 12.3952 11.9883 12.6176C11.7953 12.84 11.584 13.1132 11.4105 13.2841C11.2175 13.4739 11.0172 13.6793 11.2416 14.0602C11.4659 14.441 12.2388 15.686 13.384 16.6943C14.8546 17.9895 16.0957 18.3912 16.4805 18.5817C16.8653 18.7721 17.0903 18.7402 17.3146 18.4865C17.539 18.2321 18.2772 17.3758 18.5335 16.9956C18.7898 16.6154 19.0468 16.678 19.4003 16.8052C19.7537 16.9317 21.647 17.8512 22.0318 18.0417C22.4165 18.2321 22.6735 18.3273 22.77 18.4858C22.8665 18.6436 22.8665 19.4054 22.5457 20.293Z"
+                                fill="#073030" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="footer-menu">
+                <div class="footer-menu__container">
+                    <span class="footer-menu__title">Услуги:</span>
+                    <ul>
+                        <li>
+                            <a href="">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="">Инженерные коммуникации</a>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                        </li>
+                        <li>
+                            <a href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu__container">
+                    <ul>
+                        <li>
+                            <a href="">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="">Реализованные объекты</a>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                        </li>
+                        <li>
+                            <a href="">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-contacts">
+                <div class="footer-mess">
+                    <a href="" class="footer-contacts--mess">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 0C23.2846 0 30 6.71544 30 15C30 23.2846 23.2846 30 15 30C6.71544 30 0 23.2846 0 15C0 6.71544 6.71544 0 15 0ZM20.1743 21.1141C20.4502 20.2676 21.7428 11.8311 21.9026 10.1687C21.9509 9.66522 21.7917 9.33065 21.48 9.1813C21.103 9 20.5448 9.09065 19.8972 9.32413C19.0089 9.64435 7.65326 14.4659 6.99717 14.745C6.375 15.0091 5.78674 15.2974 5.78674 15.7148C5.78674 16.0083 5.96087 16.1733 6.44087 16.3448C6.94044 16.5228 8.19848 16.9043 8.94131 17.1091C9.65674 17.3067 10.4713 17.1352 10.9278 16.8515C11.4117 16.5509 16.9963 12.8139 17.3974 12.4865C17.7978 12.1591 18.1174 12.5785 17.79 12.9065C17.4626 13.2339 13.6291 16.9546 13.1237 17.4698C12.51 18.0952 12.9457 18.7435 13.3572 19.003C13.8274 19.2991 17.2089 21.5674 17.7183 21.9313C18.2276 22.2952 18.7441 22.4602 19.217 22.4602C19.6898 22.4602 19.9389 21.8374 20.1743 21.1141Z"
+                                fill="#073030" />
+                        </svg>
+                    </a>
+                    <a href="" class="footer-contacts--mess">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 0C6.72921 0 9.67976e-05 6.72911 9.67976e-05 15C9.67976e-05 17.5826 0.667268 20.1221 1.93248 22.363L0.0242271 29.1716C-0.0383814 29.3953 0.0222707 29.6353 0.184009 29.8016C0.308574 29.9301 0.478139 29.9999 0.652269 29.9999C0.704442 29.9999 0.757268 29.9934 0.80879 29.981L7.91485 28.2208C10.0846 29.3856 12.5283 29.9999 15 29.9999C23.2709 29.9999 30 23.2708 30 15C30 6.72911 23.2709 0 15 0ZM22.5457 20.293C22.2248 21.1812 20.6857 21.9919 19.9461 22.1008C19.2822 22.198 18.4422 22.2397 17.52 21.9501C16.9611 21.7741 16.2437 21.5406 15.3248 21.1486C11.462 19.5012 8.93942 15.6606 8.74637 15.4069C8.55398 15.1532 7.17399 13.3454 7.17399 11.4743C7.17399 9.60323 8.16855 8.68301 8.52203 8.30215C8.8755 7.92128 9.29224 7.82606 9.5492 7.82606C9.80615 7.82606 10.0625 7.82932 10.2875 7.83976C10.5242 7.8515 10.8418 7.75041 11.1542 8.49258C11.4751 9.25432 12.2453 11.1254 12.3405 11.3165C12.437 11.5069 12.5009 11.7293 12.3731 11.983C12.2453 12.2367 12.1814 12.3952 11.9883 12.6176C11.7953 12.84 11.584 13.1132 11.4105 13.2841C11.2175 13.4739 11.0172 13.6793 11.2416 14.0602C11.4659 14.441 12.2388 15.686 13.384 16.6943C14.8546 17.9895 16.0957 18.3912 16.4805 18.5817C16.8653 18.7721 17.0903 18.7402 17.3146 18.4865C17.539 18.2321 18.2772 17.3758 18.5335 16.9956C18.7898 16.6154 19.0468 16.678 19.4003 16.8052C19.7537 16.9317 21.647 17.8512 22.0318 18.0417C22.4165 18.2321 22.6735 18.3273 22.77 18.4858C22.8665 18.6436 22.8665 19.4054 22.5457 20.293Z"
+                                fill="#073030" />
+                        </svg>
+                    </a>
+                </div>
+                <button class="btn">Заказать звонок</button>
+                <a href="tel:+74951590690" class="footer-contacts--tel">+7 495 159-06-90</a>
+                <a href="mailto:welcome@rotenstein.ru" class="footer-contacts--mess">welcome@rotenstein.ru</a>
+                <p class="footer-contacts--address">г. Москва, Нижний Сусальный переулок, 5с19, офис 305</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        const root = document.documentElement;
+        const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+        const marqueeContent = document.querySelector("ul.marquee-content");
+
+        root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+        for (let i = 0; i < marqueeElementsDisplayed; i++) {
+            marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+        }
+    </script>
+
+</body>
+
+</html>
